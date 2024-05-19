@@ -136,8 +136,8 @@ WHERE company = 'Carvana';
 
 -- Certain companies like Carvana have industry column not filled properly. 
 -- For example Carvana appears two times. 
--- In one row Carvana has the industry displayed for them and for the other row the value is blank.
--- We are going to try filling those blank or null cells with the values from other rows.
+-- In one row Carvana has the industry filled and for the other row the value is blank.
+-- We're going to fill those blank or null cells with the values from other rows.
 SELECT *
 FROM layoffs_staging2 t1
 JOIN layoffs_staging2 t2 
@@ -170,7 +170,6 @@ FROM layoffs_staging2
 WHERE company = "Bally's Interactive";
 
 -- For those companies if both total_laid_off and percentage_laid_off is null that means we don't know if there were any layoffs.
--- We are going to delete these values since they dont provide any data.
 SELECT *
 FROM layoffs_staging2
 WHERE total_laid_off IS NULL
