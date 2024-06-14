@@ -3,7 +3,7 @@
 This repository contains various files to data related stuff such as:
 ### - SQL Files
 ###### --- Layoffs Data Cleaning
-![SQL_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Layoffs_cleaning_queries.png)
+![SQL_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Layoffs_cleaning.png)
 ### - Excel Files
 ### - PowerBI Files
 ###### --- Data Professional Survey Breakdown
