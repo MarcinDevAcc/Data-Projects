@@ -11,6 +11,8 @@ This repository contains various files to data related stuff such as:
 ##### Layoffs Data Cleaning
 ![SQL_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Layoffs_cleaning.png)
 ## Excel Files
+##### Coffee Orders Project
+![EXCEL_1](https://raw.github.com//MarcinDevAcc/Data-Projects/main/Excel/Coffee_orders_project/CoffeeSalesProject.png)
 ## PowerBI Files
 ##### Data Professional Survey Breakdown
 ![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Data-Professional-Survey-Breakdown.jpg)
