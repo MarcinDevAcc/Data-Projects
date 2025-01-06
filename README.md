@@ -14,6 +14,7 @@ This repository contains various files to data related stuff such as:
 ##### Coffee Orders Project
 ![EXCEL_1](https://raw.github.com//MarcinDevAcc/Data-Projects/main/Excel/Coffee_orders_project/CoffeeSalesProject.png)
 ##### Cars Dataset 2024 Data Cleaning and Insights
+![EXCEL_2](https://raw.github.com//MarcinDevAcc/Data-Projects/main/images/Cars.png)
 ## PowerBI Files
 ##### Data Professional Survey Breakdown
 ![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Data-Professional-Survey-Breakdown.jpg)
