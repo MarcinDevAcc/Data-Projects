@@ -5,7 +5,8 @@ This repository contains various files to data related stuff such as:
   [SQL](#sql-files)<br>
   [Excel](#excel-files)<br>
   [PowerBI](#powerbi-files)<br>
-  [Tableau](#tableau-files)
+  [Tableau](#tableau-files)<br>
+  [Python](#python-files)
   
 ## SQL Files
 ##### Layoffs Data Cleaning
@@ -21,3 +22,6 @@ This repository contains various files to data related stuff such as:
 ## Tableau Files
 ##### British Airways Review
 ![Tableau_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/AirwaysDashboard.png)
+## Python Files
+##### Ultra Marathon Running Exploratory Data Analysis
+![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)
