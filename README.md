@@ -24,4 +24,4 @@ This repository contains various files to data related stuff such as:
 [![Tableau_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/AirwaysDashboard.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Tableau)
 ## Python Files
 ##### Ultra Marathon Running Exploratory Data Analysis
-[![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Exploratory%20Data%20Analysis%20With%20Python%20Pandas%20London%20bike%20sharing)
+[![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Ultra-marathon-running-data)
