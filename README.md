@@ -23,5 +23,7 @@ This repository contains various files to data related stuff such as:
 ##### British Airways Review
 [![Tableau_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/AirwaysDashboard.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Tableau)
 ## Python Files
-##### Ultra Marathon Running Exploratory Data Analysis
+##### Ultra Marathon Running | Exploratory Data Analysis
 [![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Ultra-marathon-running-data)
+##### Students Social Media Addiction | Exploratory Data Analysis
+[![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students_Social_Media_Addiction)
