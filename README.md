@@ -17,8 +17,8 @@ This repository contains various files to data related stuff such as:
 ##### Cars Dataset 2024 Data Cleaning and Insights
 [![EXCEL_2](https://raw.github.com//MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
 ## PowerBI Files
-##### Data Professional Survey Breakdown
-[![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Data-Professional-Survey-Breakdown.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI)
+##### Superstore Data Normalization | Visualization and Insights
+[![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Superstore%20Data%20img.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI)
 ## Tableau Files
 ##### British Airways Review
 [![Tableau_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/AirwaysDashboard.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Tableau)
