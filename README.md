@@ -3,10 +3,10 @@
 This repository contains various files related to data projects, including:
 
   [SQL](#sql)<br>
-  [Excel](#excel)<br>
   [PowerBI](#powerbi)<br>
-  [Tableau](#tableau)<br>
-  [Python](#python)
+  [Python](#python)<br>
+  [Excel](#excel)<br>
+  [Tableau](#tableau)
   
 ## SQL
 ##### Layoffs Data Cleaning
