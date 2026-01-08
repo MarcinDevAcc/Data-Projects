@@ -1,29 +1,35 @@
 # Data Hub
 
-This repository contains various files to data related stuff such as:
+This repository contains various files related to data projects, including:
 
-  [SQL](#sql-files)<br>
-  [Excel](#excel-files)<br>
-  [PowerBI](#powerbi-files)<br>
-  [Tableau](#tableau-files)<br>
-  [Python](#python-files)
+  [SQL](#sql)<br>
+  [Excel](#excel)<br>
+  [PowerBI](#powerbi)<br>
+  [Tableau](#tableau)<br>
+  [Python](#python)
   
 ## SQL
 ##### Layoffs Data Cleaning
 [![SQL_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Layoffs_cleaning.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/SQL)
+
 ## PowerBI
-##### Superstore Data Normalization | Visualization and Insights
+##### Superstore Data Normalization, Visualization, and Insights
 [![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Superstore%20Data%20img.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI)
+
 ## Python
 ##### Ultra Marathon Running | Exploratory Data Analysis
 [![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Ultra-marathon-running-data)
+
 ##### Students Social Media Addiction | Exploratory Data Analysis
 [![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students-Social-Media-Addiction)
+
 ## Excel
 ##### Coffee Orders Project
-[![EXCEL_1](https://raw.github.com//MarcinDevAcc/Data-Projects/main/Excel/Coffee_orders_project/CoffeeSalesProject.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
-##### Cars Dataset 2024 Data Cleaning and Insights
-[![EXCEL_2](https://raw.github.com//MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
+[![Excel_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/Excel/Coffee_orders_project/CoffeeSalesProject.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel/Coffee_orders_project)
+
+##### Cars Dataset 2024 | Data Cleaning and Insights
+[![Excel_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
+
 ## Tableau
-##### British Airways Review
+##### British Airways Review Dashboard
 [![Tableau_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/AirwaysDash.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Tableau)
