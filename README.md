@@ -27,8 +27,11 @@ This repository contains various files related to data projects, including:
 ##### Coffee Orders Project
 [![Excel_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/Excel/Coffee_orders_project/CoffeeSalesProject.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel/Coffee_orders_project)
 
+##### Coffee Orders Project
+[![Excel_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Tile_Store_Orders_Screenshot.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
+
 ##### Cars Dataset 2024 | Data Cleaning and Insights
-[![Excel_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
+[![Excel_3](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel)
 
 ## Tableau
 ##### British Airways Review Dashboard
