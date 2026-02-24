@@ -213,14 +213,3 @@ The analysis is fully reproducible:
 
 - `Exploratory_Data_Analysis_ultra_marathon_running_dataset.ipynb` - complete data processing and EDA notebook
 - Source data: `TWO_CENTURIES_OF_UM_RACES.csv` (downloaded via Kaggle API, not included in repo)
-
----
-
-## Future Enhancement Opportunities
-
-- **Expanded geographic scope**: Compare Polish results with other countries
-- **Multi-distance analysis**: Include 50km, 50 miles, 100 miles races
-- **Time series forecasting**: Predict future performance trends
-- **Clustering analysis**: Identify athlete performance segments
-- **Weather correlation**: Integrate weather data for race conditions analysis
-- **Elevation profiles**: Add course difficulty metrics
