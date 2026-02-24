@@ -5,8 +5,16 @@
 Interactive Excel dashboard analyzing coffee sales performance across multiple dimensions.  
 The project tracks sales trends, customer behavior, and product performance for a coffee retail business operating in the United States, Ireland, and United Kingdom.
 
-Data period: 2019-2021  
-Dataset: 1,000+ orders across 4 coffee types and multiple product configurations
+---
+
+## Dataset Scope
+
+- **1,000+ orders** from coffee retail operations
+- **Time period**: 2019-2021
+- **Geographic coverage**: United States, Ireland, United Kingdom
+- **Product range**: 4 coffee types (Arabica, Excelsa, Liberica, Robusta)
+- **Configuration options**: Multiple roast types and package sizes
+- **Customer base**: Tracked with loyalty program status
 
 ---
 
@@ -53,6 +61,16 @@ Dataset: 1,000+ orders across 4 coffee types and multiple product configurations
 
 ---
 
+## Key Insights
+
+- **Seasonal patterns**: Clear sales trends visible by coffee type across time periods
+- **Geographic performance**: United States represents largest market share
+- **Customer loyalty impact**: Loyalty card holders demonstrate higher purchase frequency
+- **Product preferences**: Distinct roast and size preferences by market segment
+- **Top customer concentration**: Small percentage of customers drive significant revenue
+
+---
+
 ## Business Value
 
 - **Trend identification** - seasonal patterns and growth trajectories by coffee type
@@ -63,9 +81,20 @@ Dataset: 1,000+ orders across 4 coffee types and multiple product configurations
 
 ---
 
-## Tools
+## Tools & Technologies
 
 - Microsoft Excel
 - Advanced formulas (XLOOKUP, INDEX-MATCH)
 - Interactive dashboards
 - Data modeling across multiple tables
+
+---
+
+## Files Structure
+
+- `coffeeOrdersData.xlsx` - Excel workbook containing:
+  - orders sheet (transactional data)
+  - customers sheet (customer profiles)
+  - products sheet (product catalog)
+  - Dashboard sheet (interactive visualizations)
+  - Supporting calculation sheets
