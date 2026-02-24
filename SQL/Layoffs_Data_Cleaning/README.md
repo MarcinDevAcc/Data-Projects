@@ -5,11 +5,9 @@
 Professional-grade data cleaning project using MySQL to transform raw layoffs data into analysis-ready format.  
 The project demonstrates systematic data quality improvement through staging tables, duplicate removal, standardization, and strategic NULL handling while preserving data integrity.
 
-Dataset scope: 2,361 layoff events from 1,541+ companies across 60 countries
-
 ---
 
-## Dataset Characteristics
+## Dataset Scope
 
 ### Raw Data Profile
 - **2,361 layoff records** from global companies
@@ -18,6 +16,7 @@ Dataset scope: 2,361 layoff events from 1,541+ companies across 60 countries
 - **Industry coverage**: 32 sectors (Finance, Retail, Healthcare leading)
 - **Company stages**: 16 funding stages (Post-IPO to Seed)
 - **Time period**: Recent layoff events (2023 data visible)
+- **60 countries** represented in dataset
 
 ### Data Quality Issues Identified
 - ✗ **5 duplicate records**
@@ -224,9 +223,11 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ---
 
-## SQL Techniques Demonstrated
+## Technical Implementation
 
-### Advanced Query Patterns
+### SQL Techniques Demonstrated
+
+**Advanced Query Patterns**
 - **Common Table Expressions (CTEs)**: Duplicate detection logic
 - **Window Functions**: ROW_NUMBER() with PARTITION BY
 - **Self-Joins**: Cross-referencing same table for data imputation
@@ -234,7 +235,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 - **Date Functions**: STR_TO_DATE() for parsing
 - **Schema Modification**: ALTER TABLE, MODIFY COLUMN
 
-### Best Practices Applied
+**Best Practices Applied**
 - ✓ **Non-destructive workflow** (staging tables)
 - ✓ **Incremental validation** (SELECT before UPDATE/DELETE)
 - ✓ **Explicit column specification** (avoid SELECT *)
@@ -244,9 +245,11 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ---
 
-## Data Quality Improvements
+## Key Insights
 
-### Before Cleaning
+### Data Quality Improvements
+
+**Before Cleaning**
 | Issue | Count |
 |-------|-------|
 | Total Records | 2,361 |
@@ -258,7 +261,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 | Wrong Data Types | 1 (date) |
 | Unusable Records | 740 |
 
-### After Cleaning
+**After Cleaning**
 | Metric | Result |
 |--------|--------|
 | Clean Records | ~1,616 |
@@ -270,6 +273,18 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 | Data Type Integrity | ✓ |
 
 **Data Reduction**: 2,361 → ~1,616 records (31% removal justified by lack of metrics)
+
+### Technical Insights
+1. **MySQL CTE limitations**: Cannot DELETE from CTE; requires intermediate table workaround
+2. **Self-join power**: Effective technique for imputing missing categorical values
+3. **TRIM variations**: TRIM(TRAILING) for targeted whitespace removal
+4. **STR_TO_DATE importance**: Critical for converting text dates to queryable DATE type
+
+### Data Quality Insights
+1. **31% records lacked metrics**: Highlights importance of data collection standards
+2. **Encoding errors localized**: UTF-8 issues primarily in non-English city names
+3. **Industry naming chaos**: Lack of data entry standards creates cleanup overhead
+4. **Duplicate sources**: Near-identical records suggest potential ETL issues
 
 ---
 
@@ -294,7 +309,7 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ---
 
-## Technical Stack
+## Tools & Technologies
 
 - **Database**: MySQL
 - **SQL Version**: Compatible with MySQL 8.0+ (window functions)
@@ -305,27 +320,22 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ## Files Structure
 
-- `Layoffs_raw.csv` - original dataset (2,361 records)
-- `layoffs_cleaning_queries.sql` - complete cleaning script with comments
+- `Layoffs_raw.csv` - original dataset (2,361 records, 9 attributes)
+- `layoffs_cleaning_queries.sql` - complete cleaning script with:
+  - Staging table creation
+  - Duplicate removal logic
+  - Standardization queries
+  - NULL handling procedures
+  - Data type conversions
+  - Inline documentation
 
 ---
 
-## Key Learnings & Insights
+## Future Enhancement Opportunities
 
-### Technical Insights
-1. **MySQL CTE limitations**: Cannot DELETE from CTE; requires intermediate table workaround
-2. **Self-join power**: Effective technique for imputing missing categorical values
-3. **TRIM variations**: TRIM(TRAILING) for targeted whitespace removal
-4. **STR_TO_DATE importance**: Critical for converting text dates to queryable DATE type
-
-### Data Quality Insights
-1. **31% records lacked metrics**: Highlights importance of data collection standards
-2. **Encoding errors localized**: UTF-8 issues primarily in non-English city names
-3. **Industry naming chaos**: Lack of data entry standards creates cleanup overhead
-4. **Duplicate sources**: Near-identical records suggest potential ETL issues
-
-### Workflow Insights
-1. **Staging table value**: Non-destructive approach provides safety net
-2. **Incremental validation**: SELECT before UPDATE/DELETE prevents mistakes
-3. **Systematic approach**: Tackle categories sequentially (duplicates → standard → nulls)
-4. **Documentation value**: Comments explain "why" not just "what"
+- **Automated validation**: Create stored procedures for ongoing data ingestion
+- **Audit logging**: Track changes made during cleaning process
+- **Data quality metrics**: Calculate quality scores pre/post cleaning
+- **Constraint addition**: Add foreign keys, check constraints post-cleaning
+- **View creation**: Build analysis-ready views on cleaned data
+- **Index optimization**: Add indexes on commonly queried columns (industry, country, date)
