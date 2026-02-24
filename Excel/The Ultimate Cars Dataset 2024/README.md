@@ -5,7 +5,7 @@
 Multi-dimensional analysis of the global automotive market covering 1,213 vehicle models from 31 manufacturers.  
 The project provides comparative insights into pricing, performance metrics, fuel efficiency, and market segmentation across luxury, performance, and mainstream vehicle categories.
 
-Data source: [Kaggle - Ultimate Cars Dataset 2024](https://www.kaggle.com/datasets/abdulmalik1518/the-ultimate-cars-dataset-2024/data)  
+Dataset source: [Kaggle - Ultimate Cars Dataset 2024](https://www.kaggle.com/datasets/abdulmalik1518/the-ultimate-cars-dataset-2024/data)  
 Dataset author: [Abdul Malik](https://www.kaggle.com/abdulmalik1518)
 
 ---
@@ -83,17 +83,19 @@ Dataset author: [Abdul Malik](https://www.kaggle.com/abdulmalik1518)
 
 ### Performance Leaders
 - **Top brand by average HP**: High-performance marques dominate
-- **Speed kings**: Supercars and hypercars (Bugatti, Koenigsegg)
+- **Speed kings**: Supercars and hypercars (Bugatti, Koenigsegg, Ferrari)
 - **Power-to-price efficiency**: Identification of performance value leaders
+- **Extreme performance**: Bugatti La Voiture Noire ($18M, 1500 HP)
 
 ### Market Dynamics
 - **Fuel transition**: 73.7% petrol, growing hybrid (9%) and electric (8%) segments
 - **Seating trends**: 56.7% are 5-seaters (mainstream family vehicles)
 - **Price distribution**: Median price $42,000, mean skewed by ultra-luxury segment
+- **Power evolution**: Mean 308 HP, showing performance democratization
 
 ### Brand Positioning
 - **Luxury tier**: Bugatti, Rolls-Royce, Bentley (multi-million dollar range)
-- **Performance tier**: Ferrari, Lamborghini, McLaren
+- **Performance tier**: Ferrari, Lamborghini, McLaren (high HP, premium pricing)
 - **Mainstream tier**: Honda, Toyota, Ford (high volume, accessible pricing)
 
 ---
@@ -122,9 +124,15 @@ Dataset author: [Abdul Malik](https://www.kaggle.com/abdulmalik1518)
 
 ## Files Structure
 
-- `RAW_DATA_Ultimate_Cars_Dataset_2024.csv` - source data (1,213 vehicles)
-- `WORKSHEET_Ultimate_Cars_Dataset_2024.xlsx` - complete analysis workbook with:
-  - Raw data import
-  - Analytical calculations
-  - Pivot tables
-  - Visualizations
+- `RAW_DATA_Ultimate_Cars_Dataset_2024.csv` - source data (1,213 vehicles, 13 attributes)
+- `WORKSHEET_Ultimate_Cars_Dataset_2024.xlsx` - complete analysis workbook containing:
+  - RAW DATA Ultimate Cars Data sheet (source)
+  - Analytical preparation sheets (aggregations)
+  - Visualization sheets with pivot tables and charts:
+    - Top 10 Cars by HP Vis
+    - Top 10 Cars by Total Speed Vis
+    - Price Range Distribution Vis
+    - Top 5 Most exp. Companies Vis
+    - Seat Distribution Vis
+    - Distribution of Fuel Types Vis
+    - 10 Comp. with Cheapest HP Vis
