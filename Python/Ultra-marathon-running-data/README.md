@@ -90,7 +90,7 @@ Columns (10):
 
 ---
 
-## Exploratory Data Analysis
+## Analysis Components
 
 ### Distribution Analysis
 - **Athlete average speed distribution** (100km races)
@@ -106,27 +106,6 @@ Columns (10):
 - **Completion time analysis** across different events
 - **Speed consistency** examination within 100km category
 - **Age vs. performance** relationship exploration
-
----
-
-## Key Insights
-
-### Data Quality Findings
-- **High-quality subset**: After cleaning, 9,351 valid race results
-- **Age data completeness**: ~95% of records have valid age information
-- **Speed anomalies**: Some records required outlier removal for realistic analysis
-
-### Event Characteristics
-- **Polish ultra-marathon scene**: Multiple recurring 100km events tracked
-- **Notable events**: 
-  - Setka Komandosa (Lubliniec - Kokotek)
-  - Bieg 7 dolin - 100 km Ultramaraton
-  - And others
-
-### Athlete Demographics
-- **Age range**: Broad participation from 20s to 70+
-- **Gender distribution**: Detailed tracking available for diversity analysis
-- **Performance metrics**: Speed ranges from ~6 km/h (slower finishers) to 11+ km/h (elite performers)
 
 ---
 
@@ -148,6 +127,27 @@ Columns (10):
 ### Notebook Environment
 - **Jupyter Notebook** - interactive analysis
 - **Python 3.12** - programming language
+
+---
+
+## Key Insights
+
+### Data Quality Findings
+- **High-quality subset**: After cleaning, 9,351 valid race results
+- **Age data completeness**: ~95% of records have valid age information
+- **Speed anomalies**: Some records required outlier removal for realistic analysis
+
+### Event Characteristics
+- **Polish ultra-marathon scene**: Multiple recurring 100km events tracked
+- **Notable events**: 
+  - Setka Komandosa (Lubliniec - Kokotek)
+  - Bieg 7 dolin - 100 km Ultramaraton
+  - And others
+
+### Athlete Demographics
+- **Age range**: Broad participation from 20s to 70+
+- **Gender distribution**: Detailed tracking available for diversity analysis
+- **Performance metrics**: Speed ranges from ~6 km/h (slower finishers) to 11+ km/h (elite performers)
 
 ---
 
@@ -196,6 +196,24 @@ Columns (10):
 - **Goal setting**: Realistic completion time targets based on age/gender
 - **Progress tracking**: Compare personal results against historical data
 - **Competition selection**: Choose events based on field strength
+
+---
+
+## Tools & Technologies
+
+### Programming Language
+- Python 3.12
+
+### Core Libraries
+- pandas - data manipulation
+- matplotlib - static visualizations
+- seaborn - statistical graphics
+- kaggle API - dataset retrieval
+- zipfile - archive handling
+
+### Development Environment
+- Jupyter Notebook
+- IPython kernel
 
 ---
 
