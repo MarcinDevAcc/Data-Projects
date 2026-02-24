@@ -10,7 +10,7 @@ Dataset source: [Kaggle - Social Media Addiction vs Relationships](https://www.k
 
 ---
 
-## Dataset Characteristics
+## Dataset Scope
 
 ### Sample Demographics
 - **705 students** across 26 countries
@@ -85,7 +85,7 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 
 ---
 
-## Key Findings
+## Key Insights
 
 ### Usage Patterns
 - **Mean addiction score**: 6.4/9 (moderate-high addiction prevalence)
@@ -105,7 +105,7 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 
 ---
 
-## Business & Research Applications
+## Business Applications
 
 ### Educational Institutions
 - **Intervention programs**: Target high-risk student groups
