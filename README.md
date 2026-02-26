@@ -1,12 +1,15 @@
 # Data Hub
+##### For better insight, check project section by clicking the image
+##### This repository contains various files related to data projects, including:
 
-This repository contains various files related to data projects, including:
-
+##### Go to:
   [SQL](#sql)<br>
   [PowerBI](#powerbi)<br>
   [Python](#python)<br>
   [Excel](#excel)<br>
   [Tableau](#tableau)
+
+
   
 ## SQL
 ##### Layoffs Data Cleaning
