@@ -1,0 +1,16 @@
+supplier_id,supplier_name,country,lead_time_days,reliability_pct,created_at
+1,TechSupply Sp. z o.o.,Polska,2,92.18,2023-01-01
+2,MegaDistrib GmbH,Niemcy,5,91.71,2023-01-01
+3,ShanghaiGoods Ltd.,Chiny,24,84.57,2023-01-01
+4,IstanbulTrade Co.,Turcja,8,88.5,2023-01-01
+5,MilanExport S.r.l.,Włochy,5,88.24,2023-01-01
+6,WarszawaDystrybucja,Polska,3,93.63,2023-01-01
+7,BerlinLogistics AG,Niemcy,7,90.19,2023-01-01
+8,BeijingSource Ltd.,Chiny,26,84.31,2023-01-01
+9,AnkaraSupply Co.,Turcja,13,84.42,2023-01-01
+10,RomaTrade S.r.l.,Włochy,9,90.23,2023-01-01
+11,KrakówHurt Sp. z o.o.,Polska,2,97.31,2023-01-01
+12,MünchenWaren GmbH,Niemcy,4,94.89,2023-01-01
+13,ShenzhenTech Ltd.,Chiny,30,78.61,2023-01-01
+14,IzmirGoods Co.,Turcja,10,92.53,2023-01-01
+15,FlorenceItems S.r.l.,Włochy,7,88.82,2023-01-01
