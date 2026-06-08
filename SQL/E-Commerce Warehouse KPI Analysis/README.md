@@ -7,6 +7,11 @@ The project covers the full data pipeline — from realistic data generation thr
 
 Key KPIs analyzed: **Return Rate**, **Lead Time**, **Order Cycle Time**, **Fill Rate**, **Cost per Shipment**
 
+> **Note**: All data in this project is synthetically generated using Python (Faker library).
+> It does not represent any real company, supplier, or business operation.
+> Carrier names (DPD, DHL, InPost, UPS) are used for illustrative purposes only —
+> all associated metrics are fictional and do not reflect actual carrier performance.
+
 ---
 
 ## Dataset Scope
