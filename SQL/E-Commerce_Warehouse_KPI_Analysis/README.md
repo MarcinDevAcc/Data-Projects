@@ -197,7 +197,7 @@ Data quality was validated across 6 dimensions before KPI analysis:
 ## Files Structure
 
 ```
-warehouse-analytics/
+E-Commerce_Warehouse_KPI_Analysis/
 │
 ├── data/
 │   └── raw/                          # Generated CSV files (9 tables)
