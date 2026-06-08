@@ -23,7 +23,7 @@
 [![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Superstore%20Data%20img.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI/Superstore_data)
 
 #### Plant Co. Sales Performance Analysis and Dashboard
-[![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Plant_Co_Dashboard_image.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI/Plant_CO)
+[![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Plant_Co_Dashboard_image.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI/Plant_Co)
 
 ## Python
 #### Ultra Marathon Running | Exploratory Data Analysis
