@@ -2,74 +2,50 @@ CREATE DATABASE IF NOT EXISTS warehouse_db;
 USE warehouse_db;
 
 -- 1. SUPPLIERS
--- Dostawcy, od których zamawiamy towar do magazynu.
--- To tabela referencyjna - istnieje niezależnie od zamówień.
 
 CREATE TABLE suppliers (
     supplier_id     INT AUTO_INCREMENT PRIMARY KEY,
     supplier_name   VARCHAR(100) NOT NULL,
     country         VARCHAR(50)  NOT NULL,
-    lead_time_days  INT          NOT NULL,  -- standardowy czas dostawy w dniach
-    reliability_pct DECIMAL(5,2) NOT NULL,  -- % zamówień dostarczonych na czas
+    lead_time_days  INT          NOT NULL,
+    reliability_pct DECIMAL(5,2) NOT NULL,
     created_at      DATETIME     DEFAULT CURRENT_TIMESTAMP
 );
 
--- 2. SKUS
--- SKU = Stock Keeping Unit = unikalny identyfikator produktu.
--- Każdy produkt w magazynie ma swoje SKU.
--- Przykład: "T-SHIRT-RED-M" to inne SKU niż "T-SHIRT-RED-L".
--- ABC_class to segmentacja produktów:
---   A = top 20% SKU generujących 80% wartości (Pareto)
---   B = środkowe 30%
---   C = pozostałe 50% (długi ogon)
+# 	2. SKUS
 
 CREATE TABLE skus (
     sku_id          INT AUTO_INCREMENT PRIMARY KEY,
     sku_code        VARCHAR(50)  NOT NULL UNIQUE,
     product_name    VARCHAR(100) NOT NULL,
-    category        VARCHAR(50)  NOT NULL,  -- np. Electronics, Clothing, Home
-    unit_cost       DECIMAL(10,2) NOT NULL, -- koszt zakupu od dostawcy
-    unit_price      DECIMAL(10,2) NOT NULL, -- cena sprzedaży klientowi
+    category        VARCHAR(50)  NOT NULL,
+    unit_cost       DECIMAL(10,2) NOT NULL,
+    unit_price      DECIMAL(10,2) NOT NULL,
     weight_kg       DECIMAL(6,3) NOT NULL,
-    abc_class       CHAR(1)      NOT NULL,  -- A, B lub C
+    abc_class       CHAR(1)      NOT NULL,
     supplier_id     INT,
     created_at      DATETIME     DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id)
 );
 
--- 3. PURCHASE_ORDERS (PO)
--- Zamówienie złożone DO dostawcy, gdy chcemy uzupełnić zapas.
--- Proces: my składamy PO → dostawca potwierdza → dostarcza.
--- status:
---   'pending'   = złożone, czeka na potwierdzenie
---   'confirmed' = dostawca potwierdził
---   'shipped'   = dostawca wysłał
---   'received'  = dotarło do naszego magazynu
---   'cancelled' = anulowane
+#	3. PURCHASE_ORDERS (PO)
 
 CREATE TABLE purchase_orders (
     po_id           INT AUTO_INCREMENT PRIMARY KEY,
     supplier_id     INT          NOT NULL,
     sku_id          INT          NOT NULL,
-    ordered_qty     INT          NOT NULL,  -- ile zamówiliśmy
+    ordered_qty     INT          NOT NULL,
     unit_cost       DECIMAL(10,2) NOT NULL,
     status          VARCHAR(20)  NOT NULL DEFAULT 'pending',
-    order_date      DATETIME     NOT NULL,  -- kiedy złożyliśmy zamówienie
-    expected_date   DATETIME     NOT NULL,  -- kiedy spodziewamy się dostawy
-    actual_date     DATETIME     NULL,      -- kiedy faktycznie dotarło (NULL = jeszcze nie)
+    order_date      DATETIME     NOT NULL,
+    expected_date   DATETIME     NOT NULL,
+    actual_date     DATETIME     NULL,
     created_at      DATETIME     DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (supplier_id) REFERENCES suppliers(supplier_id),
     FOREIGN KEY (sku_id)      REFERENCES skus(sku_id)
 );
 
--- 4. EMPLOYEES
--- Pracownicy magazynu wykonujący operacje fizyczne.
--- role:
---   'picker'    = kompletuje zamówienia klientów
---   'receiver'  = przyjmuje towar od dostawców
---   'packer'    = pakuje zamówienia przed wysyłką
---   'supervisor'= nadzoruje sekcję
--- shift: 'morning' (6:00-14:00), 'afternoon' (14:00-22:00), 'night' (22:00-6:00)
+#	4. EMPLOYEES
 
 CREATE TABLE employees (
     employee_id     INT AUTO_INCREMENT PRIMARY KEY,
@@ -84,13 +60,6 @@ CREATE TABLE employees (
 );
 
 -- 5. RECEIVING_LOG
--- Zapis każdego przyjęcia towaru do magazynu.
--- Jedna linia w receiving_log = jedna dostawa jednego SKU.
--- Dlaczego received_qty może być < ordered_qty?
---   - dostawca nie miał całości na stanie
---   - część była uszkodzona i odrzucona
---   - błąd w zamówieniu
--- Ta tabela jest kluczowa do liczenia Fill Rate dostawcy!
 
 CREATE TABLE receiving_log (
     receiving_id    INT AUTO_INCREMENT PRIMARY KEY,
@@ -110,14 +79,6 @@ CREATE TABLE receiving_log (
 );
 
 -- 6. INVENTORY
--- Aktualny stan magazynowy każdego SKU.
--- WAŻNE: To nie jest log zmian - to aktualny snapshot.
--- quantity_on_hand = co fizycznie jest na magazynie
--- quantity_reserved = zarezerwowane pod istniejące zamówienia
---   (klient złożył zamówienie ale paczka jeszcze nie wyszła)
--- quantity_available = on_hand - reserved (to możemy jeszcze sprzedać)
--- reorder_point = gdy on_hand spada poniżej tej wartości,
---   system powinien wygenerować nowe PO do dostawcy
 
 CREATE TABLE inventory (
     inventory_id        INT AUTO_INCREMENT PRIMARY KEY,
@@ -131,15 +92,6 @@ CREATE TABLE inventory (
 );
 
 -- 7. CUSTOMER_ORDERS
--- Zamówienia złożone PRZEZ klientów (B2C).
--- channel: 'website', 'mobile_app', 'marketplace' (np. Allegro)
--- status:
---   'new'        = właśnie wpłynęło
---   'processing' = w trakcie kompletacji
---   'shipped'    = wysłane
---   'delivered'  = dostarczone
---   'cancelled'  = anulowane
---   'returned'   = zwrócone
 
 CREATE TABLE customer_orders (
     order_id        INT AUTO_INCREMENT PRIMARY KEY,
@@ -158,13 +110,6 @@ CREATE TABLE customer_orders (
 );
 
 -- 8. PICK_ORDERS
--- Zlecenie kompletacji = instrukcja dla pickerów.
--- Gdy klient składa zamówienie, system generuje pick order.
--- Picker idzie do lokalizacji, bierze towar, zanosi do pakowania.
--- is_correct: czy skompletowano właściwy towar we właściwej ilości?
---   FALSE = błąd pickingu - to jest nasz "defect"
--- lines_picked: ile linii zamówienia skompletowano
---   (jedno zamówienie może mieć kilka produktów = kilka linii)
 
 CREATE TABLE pick_orders (
     pick_id         INT AUTO_INCREMENT PRIMARY KEY,
@@ -185,12 +130,6 @@ CREATE TABLE pick_orders (
 );
 
 -- 9. SHIPMENTS
--- Wysyłka paczki do klienta.
--- carrier: 'DPD', 'DHL', 'InPost', 'UPS', 'FedEx'
--- shipping_cost: ile zapłaciliśmy przewoźnikowi (nasz koszt)
--- sla_days: ile dni roboczych obiecaliśmy klientowi na dostawę
--- is_on_time: czy dotarło w terminie SLA?
---   FALSE = przekroczony SLA = niezadowolony klient
 
 CREATE TABLE shipments (
     shipment_id     INT AUTO_INCREMENT PRIMARY KEY,
