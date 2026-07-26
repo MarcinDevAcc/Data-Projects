@@ -16,7 +16,7 @@
 [![SQL_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Layoffs_cleaning.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/SQL/Layoffs_Data_Cleaning)
 
 #### E-Commerce Warehouse KPI Analysis
-[![SQL_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/warehouse.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/SQL/E-Commerce_Warehouse_KPI_Analysis)
+[![SQL_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/warehouse.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/SQL/E-Commerce_Warehouse_KPI_Analysis)
 
 ## PowerBI
 #### Superstore Data Normalization, Visualization, and Insights
