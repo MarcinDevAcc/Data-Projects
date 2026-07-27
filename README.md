@@ -26,11 +26,14 @@
 [![BI_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Plant_Co_Dashboard_image.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/PowerBI/Plant_Co)
 
 ## Python
+#### CenoMetr | Apartment Price Prediction
+[![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/CenoMetr_Cover.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/CenoMetr_App)
+
 #### Ultra Marathon Running | Exploratory Data Analysis
-[![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Ultra-marathon-running-data)
+[![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/dataset-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Ultra-marathon-running-data)
 
 #### Students Social Media Addiction | Exploratory Data Analysis
-[![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students-Social-Media-Addiction)
+[![Python_3](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students-Social-Media-Addiction)
 
 ## Excel
 #### Coffee Orders Project
