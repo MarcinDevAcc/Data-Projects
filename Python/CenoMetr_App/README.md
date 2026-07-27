@@ -141,6 +141,5 @@ CenoMetr_App/
 - The trained model is not committed to version control; running Part 2 regenerates it locally.
 
 **Suggested Enhancements**
-- Integration of transaction‑level data (higher label accuracy).  
-- API‑based valuation service + BI dashboard.  
-- Extended spatial features (geocoding, distance to amenities).
+- Automate data acquasition/Improve UI of webscraper
+- Fully automate data pipeline
