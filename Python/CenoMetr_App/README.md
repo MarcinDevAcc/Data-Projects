@@ -1,4 +1,4 @@
-# **CenoMetr — Apartment Price Prediction (Portfolio Version)**
+# **CenoMetr — Apartment Price Prediction**
 
 ## **Overview**
 **CenoMetr** is a predictive system for estimating apartment prices based on up‑to‑date listing data.  
