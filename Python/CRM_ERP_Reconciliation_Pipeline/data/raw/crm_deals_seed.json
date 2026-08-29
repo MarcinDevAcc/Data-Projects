@@ -1,0 +1,2002 @@
+[
+  {
+    "deal_id": "DEAL-00001",
+    "account_id": "ACC-0029",
+    "amount": 7238.22,
+    "currency": "USD",
+    "close_date": "2025-01-13",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00002",
+    "account_id": "ACC-0005",
+    "amount": 14967.07,
+    "currency": "PLN",
+    "close_date": "2025-10-07",
+    "sales_rep": "Allison Hill",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00003",
+    "account_id": "ACC-0026",
+    "amount": 1150.13,
+    "currency": "USD",
+    "close_date": "2025-09-16",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00004",
+    "account_id": "ACC-0021",
+    "amount": 19090.78,
+    "currency": "PLN",
+    "close_date": "2025-05-23",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00005",
+    "account_id": "ACC-0049",
+    "amount": 3004.15,
+    "currency": "EUR",
+    "close_date": "2025-04-21",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00006",
+    "account_id": "ACC-0094",
+    "amount": 20274.64,
+    "currency": "EUR",
+    "close_date": "2025-11-06",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00007",
+    "account_id": "ACC-0107",
+    "amount": 14025.0,
+    "currency": "PLN",
+    "close_date": "2025-07-13",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00008",
+    "account_id": "ACC-0099",
+    "amount": 16700.95,
+    "currency": "PLN",
+    "close_date": "2025-02-05",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00009",
+    "account_id": "ACC-0082",
+    "amount": 7310.35,
+    "currency": "EUR",
+    "close_date": "2025-02-21",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "DE",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00010",
+    "account_id": "ACC-0120",
+    "amount": 7040.96,
+    "currency": "USD",
+    "close_date": "2025-04-18",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00011",
+    "account_id": "ACC-0060",
+    "amount": 6497.87,
+    "currency": "USD",
+    "close_date": "2025-10-01",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00012",
+    "account_id": "ACC-0088",
+    "amount": 14145.27,
+    "currency": "USD",
+    "close_date": "2025-11-24",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00013",
+    "account_id": "ACC-0009",
+    "amount": 10328.54,
+    "currency": "EUR",
+    "close_date": "2025-01-17",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00014",
+    "account_id": "ACC-0051",
+    "amount": 16558.25,
+    "currency": "PLN",
+    "close_date": "2025-06-11",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00015",
+    "account_id": "ACC-0034",
+    "amount": 14253.52,
+    "currency": "USD",
+    "close_date": "2025-05-07",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00016",
+    "account_id": "ACC-0012",
+    "amount": 12983.39,
+    "currency": "PLN",
+    "close_date": "2025-04-23",
+    "sales_rep": "Allison Hill",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00017",
+    "account_id": "ACC-0009",
+    "amount": 10842.92,
+    "currency": "USD",
+    "close_date": "2025-03-23",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00018",
+    "account_id": "ACC-0071",
+    "amount": 6659.65,
+    "currency": "USD",
+    "close_date": "2025-08-28",
+    "sales_rep": "Allison Hill",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00019",
+    "account_id": "ACC-0044",
+    "amount": 19330.67,
+    "currency": "EUR",
+    "close_date": "2025-10-02",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00020",
+    "account_id": "ACC-0113",
+    "amount": 23868.49,
+    "currency": "PLN",
+    "close_date": "2025-08-21",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00021",
+    "account_id": "ACC-0039",
+    "amount": 21827.7,
+    "currency": "PLN",
+    "close_date": "2025-09-17",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "DE",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00022",
+    "account_id": "ACC-0119",
+    "amount": 23860.74,
+    "currency": "USD",
+    "close_date": "2025-03-24",
+    "sales_rep": "Allison Hill",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00023",
+    "account_id": "ACC-0113",
+    "amount": 23262.92,
+    "currency": "PLN",
+    "close_date": "2025-01-10",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00024",
+    "account_id": "ACC-0063",
+    "amount": 2598.51,
+    "currency": "PLN",
+    "close_date": "2025-10-18",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00025",
+    "account_id": "ACC-0071",
+    "amount": 12144.42,
+    "currency": "USD",
+    "close_date": "2025-03-07",
+    "sales_rep": "Angie Henderson",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00026",
+    "account_id": "ACC-0119",
+    "amount": 24126.89,
+    "currency": "EUR",
+    "close_date": "2025-11-07",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00027",
+    "account_id": "ACC-0116",
+    "amount": 9648.8,
+    "currency": "USD",
+    "close_date": "2025-12-10",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00028",
+    "account_id": "ACC-0071",
+    "amount": 1015.34,
+    "currency": "EUR",
+    "close_date": "2025-02-02",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00029",
+    "account_id": "ACC-0030",
+    "amount": 15962.02,
+    "currency": "USD",
+    "close_date": "2025-02-06",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00030",
+    "account_id": "ACC-0086",
+    "amount": 6331.11,
+    "currency": "USD",
+    "close_date": "2025-02-06",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00031",
+    "account_id": "ACC-0101",
+    "amount": 12080.44,
+    "currency": "USD",
+    "close_date": "2025-10-20",
+    "sales_rep": "Gina Moore",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00032",
+    "account_id": "ACC-0055",
+    "amount": 11060.75,
+    "currency": "USD",
+    "close_date": "2025-02-19",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00033",
+    "account_id": "ACC-0083",
+    "amount": 16509.66,
+    "currency": "USD",
+    "close_date": "2025-01-28",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00034",
+    "account_id": "ACC-0025",
+    "amount": 6592.08,
+    "currency": "PLN",
+    "close_date": "2025-06-23",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00035",
+    "account_id": "ACC-0119",
+    "amount": 6620.26,
+    "currency": "EUR",
+    "close_date": "2025-05-23",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00036",
+    "account_id": "ACC-0070",
+    "amount": 1739.41,
+    "currency": "PLN",
+    "close_date": "2025-10-09",
+    "sales_rep": "Allison Hill",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00037",
+    "account_id": "ACC-0062",
+    "amount": 10457.14,
+    "currency": "PLN",
+    "close_date": "2025-05-02",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00038",
+    "account_id": "ACC-0050",
+    "amount": 552.81,
+    "currency": "EUR",
+    "close_date": "2025-03-26",
+    "sales_rep": "Cristian Santos",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00039",
+    "account_id": "ACC-0072",
+    "amount": 24887.86,
+    "currency": "USD",
+    "close_date": "2025-12-23",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00040",
+    "account_id": "ACC-0070",
+    "amount": 14689.92,
+    "currency": "PLN",
+    "close_date": "2025-04-22",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00041",
+    "account_id": "ACC-0110",
+    "amount": 12819.83,
+    "currency": "EUR",
+    "close_date": "2025-10-27",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00042",
+    "account_id": "ACC-0009",
+    "amount": 2178.77,
+    "currency": "PLN",
+    "close_date": "2025-02-11",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00043",
+    "account_id": "ACC-0006",
+    "amount": 14683.52,
+    "currency": "PLN",
+    "close_date": "2025-10-19",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00044",
+    "account_id": "ACC-0034",
+    "amount": 8251.06,
+    "currency": "USD",
+    "close_date": "2025-10-17",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00045",
+    "account_id": "ACC-0039",
+    "amount": 16956.41,
+    "currency": "PLN",
+    "close_date": "2025-07-22",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00046",
+    "account_id": "ACC-0073",
+    "amount": 11728.0,
+    "currency": "PLN",
+    "close_date": "2025-02-07",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00047",
+    "account_id": "ACC-0045",
+    "amount": 3745.19,
+    "currency": "EUR",
+    "close_date": "2025-09-17",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00048",
+    "account_id": "ACC-0091",
+    "amount": 20926.75,
+    "currency": "EUR",
+    "close_date": "2025-03-22",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00049",
+    "account_id": "ACC-0105",
+    "amount": 691.67,
+    "currency": "USD",
+    "close_date": "2025-12-01",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00050",
+    "account_id": "ACC-0014",
+    "amount": 3328.0,
+    "currency": "EUR",
+    "close_date": "2025-03-10",
+    "sales_rep": "Angie Henderson",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00051",
+    "account_id": "ACC-0088",
+    "amount": 8900.57,
+    "currency": "USD",
+    "close_date": "2025-04-18",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00052",
+    "account_id": "ACC-0107",
+    "amount": 16039.97,
+    "currency": "PLN",
+    "close_date": "2025-01-27",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00053",
+    "account_id": "ACC-0021",
+    "amount": 24505.05,
+    "currency": "USD",
+    "close_date": "2025-03-08",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00054",
+    "account_id": "ACC-0114",
+    "amount": 3240.91,
+    "currency": "PLN",
+    "close_date": "2025-10-15",
+    "sales_rep": "Angie Henderson",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00055",
+    "account_id": "ACC-0056",
+    "amount": 14036.86,
+    "currency": "USD",
+    "close_date": "2025-07-09",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00056",
+    "account_id": "ACC-0032",
+    "amount": 5646.88,
+    "currency": "EUR",
+    "close_date": "2025-01-21",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00057",
+    "account_id": "ACC-0119",
+    "amount": 18862.2,
+    "currency": "USD",
+    "close_date": "2025-07-28",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "DE",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00058",
+    "account_id": "ACC-0095",
+    "amount": 1107.27,
+    "currency": "EUR",
+    "close_date": "2025-04-01",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00059",
+    "account_id": "ACC-0090",
+    "amount": 4400.35,
+    "currency": "EUR",
+    "close_date": "2025-05-08",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00060",
+    "account_id": "ACC-0118",
+    "amount": 5389.53,
+    "currency": "PLN",
+    "close_date": "2025-08-29",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00061",
+    "account_id": "ACC-0025",
+    "amount": 1079.78,
+    "currency": "PLN",
+    "close_date": "2025-04-27",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00062",
+    "account_id": "ACC-0066",
+    "amount": 9103.08,
+    "currency": "EUR",
+    "close_date": "2025-02-05",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00063",
+    "account_id": "ACC-0034",
+    "amount": 21987.44,
+    "currency": "PLN",
+    "close_date": "2025-01-15",
+    "sales_rep": "Angie Henderson",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00064",
+    "account_id": "ACC-0056",
+    "amount": 3155.86,
+    "currency": "PLN",
+    "close_date": "2025-05-16",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00065",
+    "account_id": "ACC-0074",
+    "amount": 9937.29,
+    "currency": "PLN",
+    "close_date": "2025-09-19",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00066",
+    "account_id": "ACC-0104",
+    "amount": 13238.05,
+    "currency": "PLN",
+    "close_date": "2025-08-12",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00067",
+    "account_id": "ACC-0085",
+    "amount": 15767.31,
+    "currency": "EUR",
+    "close_date": "2025-12-07",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00068",
+    "account_id": "ACC-0090",
+    "amount": 8491.48,
+    "currency": "EUR",
+    "close_date": "2025-12-08",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00069",
+    "account_id": "ACC-0087",
+    "amount": 23538.91,
+    "currency": "USD",
+    "close_date": "2025-08-04",
+    "sales_rep": "Angie Henderson",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00070",
+    "account_id": "ACC-0039",
+    "amount": 20926.27,
+    "currency": "USD",
+    "close_date": "2025-07-27",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00071",
+    "account_id": "ACC-0060",
+    "amount": 16540.29,
+    "currency": "USD",
+    "close_date": "2025-10-24",
+    "sales_rep": "Gina Moore",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00072",
+    "account_id": "ACC-0102",
+    "amount": 19946.52,
+    "currency": "EUR",
+    "close_date": "2025-09-19",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00073",
+    "account_id": "ACC-0012",
+    "amount": 15671.89,
+    "currency": "USD",
+    "close_date": "2025-12-06",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00074",
+    "account_id": "ACC-0032",
+    "amount": 1098.42,
+    "currency": "PLN",
+    "close_date": "2025-04-12",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00075",
+    "account_id": "ACC-0081",
+    "amount": 10653.8,
+    "currency": "EUR",
+    "close_date": "2025-02-07",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00076",
+    "account_id": "ACC-0001",
+    "amount": 16573.42,
+    "currency": "PLN",
+    "close_date": "2025-05-05",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00077",
+    "account_id": "ACC-0072",
+    "amount": 11881.47,
+    "currency": "USD",
+    "close_date": "2025-12-23",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00078",
+    "account_id": "ACC-0072",
+    "amount": 13512.73,
+    "currency": "USD",
+    "close_date": "2025-08-26",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00079",
+    "account_id": "ACC-0071",
+    "amount": 20848.94,
+    "currency": "EUR",
+    "close_date": "2025-09-16",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00080",
+    "account_id": "ACC-0032",
+    "amount": 6850.19,
+    "currency": "EUR",
+    "close_date": "2025-09-01",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00081",
+    "account_id": "ACC-0092",
+    "amount": 11276.88,
+    "currency": "EUR",
+    "close_date": "2025-05-03",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00082",
+    "account_id": "ACC-0020",
+    "amount": 2474.15,
+    "currency": "USD",
+    "close_date": "2025-06-13",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00083",
+    "account_id": "ACC-0053",
+    "amount": 2073.61,
+    "currency": "PLN",
+    "close_date": "2025-12-28",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00084",
+    "account_id": "ACC-0050",
+    "amount": 20905.83,
+    "currency": "PLN",
+    "close_date": "2025-02-01",
+    "sales_rep": "Allison Hill",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00085",
+    "account_id": "ACC-0050",
+    "amount": 7816.01,
+    "currency": "EUR",
+    "close_date": "2025-01-04",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00086",
+    "account_id": "ACC-0063",
+    "amount": 22496.38,
+    "currency": "USD",
+    "close_date": "2025-10-07",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00087",
+    "account_id": "ACC-0087",
+    "amount": 8735.17,
+    "currency": "EUR",
+    "close_date": "2025-01-15",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00088",
+    "account_id": "ACC-0117",
+    "amount": 13586.03,
+    "currency": "USD",
+    "close_date": "2025-03-07",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00089",
+    "account_id": "ACC-0018",
+    "amount": 16247.37,
+    "currency": "PLN",
+    "close_date": "2025-01-14",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00090",
+    "account_id": "ACC-0042",
+    "amount": 5685.68,
+    "currency": "EUR",
+    "close_date": "2025-07-14",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00091",
+    "account_id": "ACC-0061",
+    "amount": 20955.32,
+    "currency": "EUR",
+    "close_date": "2025-08-04",
+    "sales_rep": "Allison Hill",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00092",
+    "account_id": "ACC-0100",
+    "amount": 16428.53,
+    "currency": "PLN",
+    "close_date": "2025-06-29",
+    "sales_rep": "Allison Hill",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00093",
+    "account_id": "ACC-0031",
+    "amount": 15722.72,
+    "currency": "PLN",
+    "close_date": "2025-04-13",
+    "sales_rep": "Angie Henderson",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00094",
+    "account_id": "ACC-0033",
+    "amount": 11893.33,
+    "currency": "PLN",
+    "close_date": "2025-10-16",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "DE",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00095",
+    "account_id": "ACC-0014",
+    "amount": 24135.66,
+    "currency": "PLN",
+    "close_date": "2025-02-28",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00096",
+    "account_id": "ACC-0026",
+    "amount": 23566.03,
+    "currency": "EUR",
+    "close_date": "2025-07-12",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00097",
+    "account_id": "ACC-0099",
+    "amount": 2996.58,
+    "currency": "PLN",
+    "close_date": "2025-11-18",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00098",
+    "account_id": "ACC-0055",
+    "amount": 9006.49,
+    "currency": "PLN",
+    "close_date": "2025-10-17",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00099",
+    "account_id": "ACC-0106",
+    "amount": 21314.6,
+    "currency": "PLN",
+    "close_date": "2025-06-24",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00100",
+    "account_id": "ACC-0059",
+    "amount": 22343.59,
+    "currency": "USD",
+    "close_date": "2025-07-05",
+    "sales_rep": "Angie Henderson",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00101",
+    "account_id": "ACC-0104",
+    "amount": 7117.02,
+    "currency": "USD",
+    "close_date": "2025-09-25",
+    "sales_rep": "Gina Moore",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00102",
+    "account_id": "ACC-0032",
+    "amount": 8396.46,
+    "currency": "EUR",
+    "close_date": "2025-10-31",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00103",
+    "account_id": "ACC-0086",
+    "amount": 14461.32,
+    "currency": "EUR",
+    "close_date": "2025-05-05",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00104",
+    "account_id": "ACC-0046",
+    "amount": 12444.97,
+    "currency": "PLN",
+    "close_date": "2025-06-16",
+    "sales_rep": "Cristian Santos",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00105",
+    "account_id": "ACC-0072",
+    "amount": 22062.63,
+    "currency": "USD",
+    "close_date": "2025-11-02",
+    "sales_rep": "Allison Hill",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00106",
+    "account_id": "ACC-0063",
+    "amount": 18141.83,
+    "currency": "PLN",
+    "close_date": "2025-02-13",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00107",
+    "account_id": "ACC-0012",
+    "amount": 19926.86,
+    "currency": "EUR",
+    "close_date": "2025-09-09",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00108",
+    "account_id": "ACC-0048",
+    "amount": 16767.02,
+    "currency": "EUR",
+    "close_date": "2025-05-05",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00109",
+    "account_id": "ACC-0046",
+    "amount": 13984.52,
+    "currency": "USD",
+    "close_date": "2025-08-06",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00110",
+    "account_id": "ACC-0041",
+    "amount": 18171.47,
+    "currency": "PLN",
+    "close_date": "2025-04-29",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00111",
+    "account_id": "ACC-0095",
+    "amount": 5192.75,
+    "currency": "PLN",
+    "close_date": "2025-12-20",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00112",
+    "account_id": "ACC-0013",
+    "amount": 7433.47,
+    "currency": "USD",
+    "close_date": "2025-09-26",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00113",
+    "account_id": "ACC-0069",
+    "amount": 846.63,
+    "currency": "EUR",
+    "close_date": "2025-04-02",
+    "sales_rep": "Angie Henderson",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00114",
+    "account_id": "ACC-0017",
+    "amount": 7657.35,
+    "currency": "USD",
+    "close_date": "2025-01-28",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00115",
+    "account_id": "ACC-0057",
+    "amount": 12000.23,
+    "currency": "EUR",
+    "close_date": "2025-10-21",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "DE",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00116",
+    "account_id": "ACC-0009",
+    "amount": 3295.13,
+    "currency": "EUR",
+    "close_date": "2025-05-10",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00117",
+    "account_id": "ACC-0020",
+    "amount": 1813.42,
+    "currency": "USD",
+    "close_date": "2025-11-19",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00118",
+    "account_id": "ACC-0078",
+    "amount": 19228.86,
+    "currency": "USD",
+    "close_date": "2025-03-02",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00119",
+    "account_id": "ACC-0055",
+    "amount": 21574.08,
+    "currency": "EUR",
+    "close_date": "2025-08-15",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00120",
+    "account_id": "ACC-0098",
+    "amount": 2931.22,
+    "currency": "USD",
+    "close_date": "2025-11-09",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00121",
+    "account_id": "ACC-0071",
+    "amount": 6376.7,
+    "currency": "PLN",
+    "close_date": "2025-02-11",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00122",
+    "account_id": "ACC-0038",
+    "amount": 15048.37,
+    "currency": "USD",
+    "close_date": "2025-08-19",
+    "sales_rep": "Allison Hill",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00123",
+    "account_id": "ACC-0010",
+    "amount": 21560.36,
+    "currency": "USD",
+    "close_date": "2025-05-25",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00124",
+    "account_id": "ACC-0120",
+    "amount": 16698.98,
+    "currency": "USD",
+    "close_date": "2025-11-17",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00125",
+    "account_id": "ACC-0035",
+    "amount": 4150.24,
+    "currency": "USD",
+    "close_date": "2025-04-26",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00126",
+    "account_id": "ACC-0073",
+    "amount": 18849.46,
+    "currency": "USD",
+    "close_date": "2025-06-07",
+    "sales_rep": "Cristian Santos",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00127",
+    "account_id": "ACC-0035",
+    "amount": 17643.48,
+    "currency": "EUR",
+    "close_date": "2025-12-19",
+    "sales_rep": "Gina Moore",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00128",
+    "account_id": "ACC-0078",
+    "amount": 18496.08,
+    "currency": "EUR",
+    "close_date": "2025-01-21",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00129",
+    "account_id": "ACC-0003",
+    "amount": 14884.51,
+    "currency": "USD",
+    "close_date": "2025-12-12",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00130",
+    "account_id": "ACC-0057",
+    "amount": 13214.61,
+    "currency": "EUR",
+    "close_date": "2025-03-31",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00131",
+    "account_id": "ACC-0012",
+    "amount": 20449.0,
+    "currency": "USD",
+    "close_date": "2025-08-12",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00132",
+    "account_id": "ACC-0021",
+    "amount": 3062.7,
+    "currency": "USD",
+    "close_date": "2025-06-14",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00133",
+    "account_id": "ACC-0105",
+    "amount": 23657.24,
+    "currency": "USD",
+    "close_date": "2025-05-28",
+    "sales_rep": "Allison Hill",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00134",
+    "account_id": "ACC-0099",
+    "amount": 3340.08,
+    "currency": "EUR",
+    "close_date": "2025-05-10",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00135",
+    "account_id": "ACC-0060",
+    "amount": 21799.5,
+    "currency": "USD",
+    "close_date": "2025-01-01",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00136",
+    "account_id": "ACC-0081",
+    "amount": 19032.86,
+    "currency": "USD",
+    "close_date": "2025-07-05",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00137",
+    "account_id": "ACC-0057",
+    "amount": 23227.98,
+    "currency": "PLN",
+    "close_date": "2025-10-09",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00138",
+    "account_id": "ACC-0091",
+    "amount": 20083.19,
+    "currency": "USD",
+    "close_date": "2025-11-19",
+    "sales_rep": "Angie Henderson",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00139",
+    "account_id": "ACC-0108",
+    "amount": 2783.63,
+    "currency": "EUR",
+    "close_date": "2025-10-10",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00140",
+    "account_id": "ACC-0092",
+    "amount": 12710.2,
+    "currency": "PLN",
+    "close_date": "2025-11-28",
+    "sales_rep": "Cristian Santos",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00141",
+    "account_id": "ACC-0032",
+    "amount": 24515.99,
+    "currency": "EUR",
+    "close_date": "2025-08-01",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00142",
+    "account_id": "ACC-0113",
+    "amount": 12951.9,
+    "currency": "USD",
+    "close_date": "2025-04-08",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00143",
+    "account_id": "ACC-0065",
+    "amount": 23389.09,
+    "currency": "EUR",
+    "close_date": "2025-08-01",
+    "sales_rep": "Cristian Santos",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00144",
+    "account_id": "ACC-0085",
+    "amount": 14708.12,
+    "currency": "USD",
+    "close_date": "2025-06-02",
+    "sales_rep": "Gina Moore",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00145",
+    "account_id": "ACC-0098",
+    "amount": 8644.78,
+    "currency": "EUR",
+    "close_date": "2025-09-05",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00146",
+    "account_id": "ACC-0050",
+    "amount": 6350.74,
+    "currency": "USD",
+    "close_date": "2025-04-07",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00147",
+    "account_id": "ACC-0049",
+    "amount": 22879.04,
+    "currency": "USD",
+    "close_date": "2025-08-31",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00148",
+    "account_id": "ACC-0076",
+    "amount": 12806.13,
+    "currency": "PLN",
+    "close_date": "2025-01-19",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00149",
+    "account_id": "ACC-0059",
+    "amount": 13385.8,
+    "currency": "PLN",
+    "close_date": "2025-08-14",
+    "sales_rep": "Allison Hill",
+    "country_code": "DE",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00150",
+    "account_id": "ACC-0101",
+    "amount": 2333.29,
+    "currency": "PLN",
+    "close_date": "2025-12-02",
+    "sales_rep": "Cristian Santos",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00151",
+    "account_id": "ACC-0043",
+    "amount": 2467.73,
+    "currency": "USD",
+    "close_date": "2025-07-23",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00152",
+    "account_id": "ACC-0009",
+    "amount": 1379.53,
+    "currency": "USD",
+    "close_date": "2025-09-07",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00153",
+    "account_id": "ACC-0098",
+    "amount": 24469.27,
+    "currency": "EUR",
+    "close_date": "2025-02-16",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00154",
+    "account_id": "ACC-0102",
+    "amount": 1626.78,
+    "currency": "PLN",
+    "close_date": "2025-06-03",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00155",
+    "account_id": "ACC-0053",
+    "amount": 6482.84,
+    "currency": "PLN",
+    "close_date": "2025-08-09",
+    "sales_rep": "Angie Henderson",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00156",
+    "account_id": "ACC-0031",
+    "amount": 15682.9,
+    "currency": "EUR",
+    "close_date": "2025-11-09",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00157",
+    "account_id": "ACC-0033",
+    "amount": 6722.44,
+    "currency": "USD",
+    "close_date": "2025-08-25",
+    "sales_rep": "Allison Hill",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00158",
+    "account_id": "ACC-0057",
+    "amount": 4370.4,
+    "currency": "USD",
+    "close_date": "2025-12-13",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00159",
+    "account_id": "ACC-0109",
+    "amount": 6627.41,
+    "currency": "USD",
+    "close_date": "2025-08-06",
+    "sales_rep": "Cristian Santos",
+    "country_code": "DE",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00160",
+    "account_id": "ACC-0074",
+    "amount": 6311.54,
+    "currency": "PLN",
+    "close_date": "2025-09-05",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00161",
+    "account_id": "ACC-0107",
+    "amount": 1037.52,
+    "currency": "EUR",
+    "close_date": "2025-12-25",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00162",
+    "account_id": "ACC-0117",
+    "amount": 24353.27,
+    "currency": "USD",
+    "close_date": "2025-12-18",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00163",
+    "account_id": "ACC-0029",
+    "amount": 20147.33,
+    "currency": "USD",
+    "close_date": "2025-04-28",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00164",
+    "account_id": "ACC-0081",
+    "amount": 21039.26,
+    "currency": "USD",
+    "close_date": "2025-12-04",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00165",
+    "account_id": "ACC-0094",
+    "amount": 14699.56,
+    "currency": "PLN",
+    "close_date": "2025-08-14",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00166",
+    "account_id": "ACC-0026",
+    "amount": 10679.83,
+    "currency": "USD",
+    "close_date": "2025-06-17",
+    "sales_rep": "Angie Henderson",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00167",
+    "account_id": "ACC-0035",
+    "amount": 12793.97,
+    "currency": "USD",
+    "close_date": "2025-07-07",
+    "sales_rep": "Angie Henderson",
+    "country_code": "FR",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00168",
+    "account_id": "ACC-0044",
+    "amount": 18790.7,
+    "currency": "EUR",
+    "close_date": "2025-09-04",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00169",
+    "account_id": "ACC-0093",
+    "amount": 21573.44,
+    "currency": "PLN",
+    "close_date": "2025-03-14",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00170",
+    "account_id": "ACC-0016",
+    "amount": 6979.24,
+    "currency": "PLN",
+    "close_date": "2025-07-22",
+    "sales_rep": "Gina Moore",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00171",
+    "account_id": "ACC-0106",
+    "amount": 14821.72,
+    "currency": "EUR",
+    "close_date": "2025-12-11",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00172",
+    "account_id": "ACC-0072",
+    "amount": 15678.9,
+    "currency": "PLN",
+    "close_date": "2025-08-30",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00173",
+    "account_id": "ACC-0117",
+    "amount": 20684.46,
+    "currency": "USD",
+    "close_date": "2025-02-02",
+    "sales_rep": "Cristian Santos",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00174",
+    "account_id": "ACC-0064",
+    "amount": 7956.93,
+    "currency": "PLN",
+    "close_date": "2025-01-24",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00175",
+    "account_id": "ACC-0048",
+    "amount": 10021.82,
+    "currency": "PLN",
+    "close_date": "2025-10-03",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00176",
+    "account_id": "ACC-0107",
+    "amount": 16545.59,
+    "currency": "EUR",
+    "close_date": "2025-03-21",
+    "sales_rep": "Gina Moore",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00177",
+    "account_id": "ACC-0028",
+    "amount": 17411.88,
+    "currency": "PLN",
+    "close_date": "2025-05-24",
+    "sales_rep": "Gina Moore",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00178",
+    "account_id": "ACC-0048",
+    "amount": 24532.73,
+    "currency": "PLN",
+    "close_date": "2025-07-05",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00179",
+    "account_id": "ACC-0106",
+    "amount": 23750.76,
+    "currency": "PLN",
+    "close_date": "2025-04-08",
+    "sales_rep": "Gina Moore",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00180",
+    "account_id": "ACC-0003",
+    "amount": 15130.08,
+    "currency": "USD",
+    "close_date": "2025-11-25",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00181",
+    "account_id": "ACC-0107",
+    "amount": 5527.54,
+    "currency": "USD",
+    "close_date": "2025-03-06",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00182",
+    "account_id": "ACC-0101",
+    "amount": 19472.03,
+    "currency": "EUR",
+    "close_date": "2025-04-30",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00183",
+    "account_id": "ACC-0103",
+    "amount": 13735.28,
+    "currency": "PLN",
+    "close_date": "2025-03-16",
+    "sales_rep": "Angie Henderson",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00184",
+    "account_id": "ACC-0102",
+    "amount": 864.08,
+    "currency": "PLN",
+    "close_date": "2025-01-14",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "IT",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00185",
+    "account_id": "ACC-0095",
+    "amount": 1783.78,
+    "currency": "EUR",
+    "close_date": "2025-03-31",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "IT",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00186",
+    "account_id": "ACC-0047",
+    "amount": 11482.74,
+    "currency": "EUR",
+    "close_date": "2025-02-02",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00187",
+    "account_id": "ACC-0117",
+    "amount": 18317.45,
+    "currency": "PLN",
+    "close_date": "2025-11-11",
+    "sales_rep": "Cristian Santos",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00188",
+    "account_id": "ACC-0109",
+    "amount": 24965.38,
+    "currency": "PLN",
+    "close_date": "2025-01-16",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00189",
+    "account_id": "ACC-0010",
+    "amount": 22787.67,
+    "currency": "USD",
+    "close_date": "2025-09-09",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00190",
+    "account_id": "ACC-0082",
+    "amount": 7237.89,
+    "currency": "PLN",
+    "close_date": "2025-02-03",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00191",
+    "account_id": "ACC-0078",
+    "amount": 11616.03,
+    "currency": "EUR",
+    "close_date": "2025-09-29",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "PL",
+    "stage": "Lost"
+  },
+  {
+    "deal_id": "DEAL-00192",
+    "account_id": "ACC-0099",
+    "amount": 16447.46,
+    "currency": "USD",
+    "close_date": "2025-02-28",
+    "sales_rep": "Daniel Wagner",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00193",
+    "account_id": "ACC-0059",
+    "amount": 8803.82,
+    "currency": "EUR",
+    "close_date": "2025-04-27",
+    "sales_rep": "Abigail Shaffer",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00194",
+    "account_id": "ACC-0033",
+    "amount": 8156.83,
+    "currency": "EUR",
+    "close_date": "2025-06-10",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "DE",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00195",
+    "account_id": "ACC-0011",
+    "amount": 2735.01,
+    "currency": "PLN",
+    "close_date": "2025-08-31",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "ES",
+    "stage": "Open"
+  },
+  {
+    "deal_id": "DEAL-00196",
+    "account_id": "ACC-0076",
+    "amount": 14131.08,
+    "currency": "PLN",
+    "close_date": "2025-07-10",
+    "sales_rep": "Connie Lawrence",
+    "country_code": "PL",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00197",
+    "account_id": "ACC-0093",
+    "amount": 21768.26,
+    "currency": "EUR",
+    "close_date": "2025-12-07",
+    "sales_rep": "Allison Hill",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00198",
+    "account_id": "ACC-0028",
+    "amount": 14659.0,
+    "currency": "PLN",
+    "close_date": "2025-06-30",
+    "sales_rep": "Angie Henderson",
+    "country_code": "ES",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00199",
+    "account_id": "ACC-0048",
+    "amount": 21211.65,
+    "currency": "EUR",
+    "close_date": "2025-02-25",
+    "sales_rep": "Noah Rhodes",
+    "country_code": "FR",
+    "stage": "Won"
+  },
+  {
+    "deal_id": "DEAL-00200",
+    "account_id": "ACC-0105",
+    "amount": 24376.39,
+    "currency": "USD",
+    "close_date": "2025-08-08",
+    "sales_rep": "Allison Hill",
+    "country_code": "IT",
+    "stage": "Won"
+  }
+]

@@ -1,0 +1,10 @@
+pandas
+Faker
+fastapi
+uvicorn
+requests
+mysql-connector-python
+schedule
+tenacity
+python-dotenv
+pydantic
