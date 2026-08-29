@@ -12,7 +12,7 @@
 #### CenoMetr | Apartment Price Prediction
 [![Python_1](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/CenoMetr_Cover.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/CenoMetr_App)
 #### CRM-ERP Reconciliation Pipeline | Python ETL Project
-[![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/CRM_ERP_Cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/CRM_ERP_Reconciliation_Pipeline)
+[![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/CRM_ERP_Cover.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/CRM_ERP_Reconciliation_Pipeline)
 #### Students Social Media Addiction | Exploratory Data Analysis
 [![Python_3](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students-Social-Media-Addiction)
 ## SQL
