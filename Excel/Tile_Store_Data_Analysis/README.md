@@ -2,8 +2,8 @@
 
 ## Overview
 
-Advanced customer segmentation project using RFM (Recency, Frequency, Monetary) analysis methodology.  
-The project analyzes purchasing patterns of 245 customers across 1,000 orders to identify customer segments and prioritize marketing efforts.
+Customer segmentation project using RFM (Recency, Frequency, Monetary) analysis methodology.  
+The project analyzes purchasing patterns of 245 customers across 1,000 orders to identify customer segments and support targeted customer analysis.
 
 ---
 
@@ -34,20 +34,11 @@ The project analyzes purchasing patterns of 245 customers across 1,000 orders to
 
 ### Customer Segmentation
 Five distinct customer segments identified:
-- **Best Customers** (43 customers, RFM Score 13-15) - highest engagement and value
-- **Loyal Customers** (78 customers, RFM Score 10-12) - consistent buyers with good value
-- **Potential Loyal Customers** (73 customers, RFM Score 7-9) - growth opportunity segment
-- **Need Attention** (43 customers, RFM Score 4-6) - declining engagement
-- **At Risk** (8 customers, RFM Score 3) - lowest metrics, churn risk
-
-### Technical Implementation
-- **Pivot Table** for per-customer aggregation:
-  - Max order date (most recent purchase)
-  - Count of orders (frequency)
-  - Sum of order value (monetary total)
-- **Dynamic Array Formulas** for RFM scoring
-- **Automated categorization** based on composite RFM score
-- **Summary tables** showing segment distribution
+- **Best Customers** (43 customers, RFM Score 13-15) - highest combined RFM scores
+- **Loyal Customers** (78 customers, RFM Score 10-12) - consistently strong RFM performance
+- **Potential Loyal Customers** (73 customers, RFM Score 7-9) - mid-range RFM scores with room for further engagement
+- **Need Attention** (43 customers, RFM Score 4-6) - lower combined RFM performance
+- **At Risk** (8 customers, RFM Score 3) - lowest combined RFM scores
 
 ---
 
@@ -57,7 +48,7 @@ Five distinct customer segments identified:
 
 **Source Data (tile_store_orders)**
 - order_id
-- customer_id  
+- customer_id
 - order_date
 - product_type
 - order_value
@@ -89,33 +80,31 @@ Five distinct customer segments identified:
 ### Customer Distribution
 - **Best Customers**: 17.6% of customer base (43/245)
 - **Loyal Customers**: 31.8% - largest segment (78/245)
-- **Potential Loyal**: 29.8% - significant growth opportunity (73/245)
-- **Need Attention**: 17.6% - at-risk of churn (43/245)
-- **At Risk**: 3.3% - urgent intervention required (8/245)
+- **Potential Loyal**: 29.8% (73/245)
+- **Need Attention**: 17.6% (43/245)
+- **At Risk**: 3.3% (8/245)
 
-### Segment Characteristics
-- **High-value concentration**: Top 17.6% (Best Customers) likely drive disproportionate revenue
-- **Loyalty strength**: Nearly 50% fall into Best/Loyal categories
-- **Growth potential**: 30% in Potential Loyal segment represents conversion opportunity
-- **Churn risk**: 21% (Need Attention + At Risk) require retention efforts
+### Segment Structure
+- **Strong RFM segments**: Nearly 50% of customers fall into Best Customers or Loyal Customers
+- **Mid-range segment**: 29.8% of customers are classified as Potential Loyal
+- **Lower-engagement segments**: 21% of customers fall into Need Attention or At Risk categories
 
 ---
 
 ## Business Value
 
 ### Strategic Applications
-- **Targeted marketing campaigns** - customize messaging per segment
-- **Customer retention** - identify at-risk customers for re-engagement
-- **Resource allocation** - prioritize high-value customer relationships
-- **Growth opportunities** - convert potential loyals to loyal customers
-- **Churn prevention** - proactive outreach to at-risk segment
+- **Targeted marketing** - use customer segments to tailor communication and offers
+- **Retention analysis** - identify lower-engagement customer groups for further investigation
+- **Customer prioritization** - distinguish customers with stronger and weaker RFM profiles
+- **Growth analysis** - identify customers with mid-range scores who may have potential for stronger engagement
 
-### Segment-Specific Strategies
-- **Best Customers**: VIP treatment, exclusive offers, loyalty rewards
-- **Loyal Customers**: maintain engagement, upsell opportunities
-- **Potential Loyal**: incentivize repeat purchases, build relationship
-- **Need Attention**: win-back campaigns, personalized outreach
-- **At Risk**: urgent intervention, special discounts, feedback gathering
+### Example Segment Applications
+- **Best Customers**: loyalty rewards, exclusive offers, VIP treatment
+- **Loyal Customers**: maintain engagement and explore upsell opportunities
+- **Potential Loyal**: encourage repeat purchases and stronger engagement
+- **Need Attention**: evaluate win-back or re-engagement campaigns
+- **At Risk**: prioritize for further retention analysis and targeted outreach
 
 ---
 
