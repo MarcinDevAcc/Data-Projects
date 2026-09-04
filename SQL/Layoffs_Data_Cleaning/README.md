@@ -2,81 +2,93 @@
 
 ## Overview
 
-Professional-grade data cleaning project using MySQL to transform raw layoffs data into analysis-ready format.  
-The project demonstrates systematic data quality improvement through staging tables, duplicate removal, standardization, and strategic NULL handling while preserving data integrity.
+SQL data-cleaning project using MySQL to transform raw layoffs data into an analysis-ready dataset.
+
+The project applies a structured cleaning workflow using staging tables, duplicate detection, text standardization, NULL handling, and data type conversion while preserving the original source table.
 
 ---
 
 ## Dataset Scope
 
 ### Raw Data Profile
-- **2,361 layoff records** from global companies
+- **2,361 layoff records**
 - **9 attributes** per record
 - **Primary geographies**: United States (65%), India (6%), Canada (4%)
-- **Industry coverage**: 32 sectors (Finance, Retail, Healthcare leading)
-- **Company stages**: 16 funding stages (Post-IPO to Seed)
-- **Time period**: Recent layoff events (2023 data visible)
-- **60 countries** represented in dataset
+- **Industry coverage**: 32 sectors
+- **Company stages**: 16 funding stages
+- **60 countries** represented
+- 2023 records are included in the source data
 
 ### Data Quality Issues Identified
-- ✗ **5 duplicate records**
-- ✗ **740 missing** `total_laid_off` values (31%)
-- ✗ **785 missing** `percentage_laid_off` values (33%)
-- ✗ **209 missing** `funds_raised_millions` values (9%)
-- ✗ **4 missing** `industry` values
-- ✗ **Inconsistent industry naming** (Crypto vs. CryptoCurrency variants)
-- ✗ **Location encoding errors** (Malmö → "Malm", Florianópolis → "Floria")
-- ✗ **Country formatting issues** ("United States." with trailing period)
-- ✗ **Date stored as TEXT** instead of DATE type
-- ✗ **Leading/trailing whitespace** in company names
+- **5 duplicate records**
+- **740 missing** `total_laid_off` values
+- **785 missing** `percentage_laid_off` values
+- **209 missing** `funds_raised_millions` values
+- **4 missing** `industry` values
+- Inconsistent industry naming
+- Malformed location values
+- Country formatting inconsistencies
+- Date stored as `TEXT`
+- Leading / trailing whitespace in company names
 
 ---
 
 ## Data Cleaning Methodology
 
 ### 1. Staging Table Strategy
-**Problem**: Risk of irreversible data loss during cleaning  
-**Solution**: Create staging table to preserve original data
+
+**Problem**: Cleaning the source table directly risks irreversible changes.
+
+**Solution**: Create a working copy and preserve the original dataset.
 
 ```sql
--- Create exact replica of source table
 CREATE TABLE layoffs_staging LIKE layoffs;
 
--- Copy all data to staging environment
-INSERT INTO layoffs_staging SELECT * FROM layoffs;
+INSERT INTO layoffs_staging
+SELECT *
+FROM layoffs;
 ```
 
-**Benefits**:
-- ✓ Original data remains untouched
-- ✓ Ability to rollback if needed
-- ✓ Safe experimentation environment
+**Result**
+- Original source table remains untouched
+- Cleaning can be performed safely in staging
+- Intermediate results can be validated before destructive operations
 
 ---
 
 ### 2. Duplicate Detection & Removal
 
-#### Challenge: Identifying True Duplicates
-Near-identical records may differ only in `funds_raised_millions`, requiring multi-column partitioning.
+#### Problem
 
-#### Solution: CTE with ROW_NUMBER()
+Near-identical records may only become identifiable when multiple business fields are compared together.
+
+#### Solution
+
+Use `ROW_NUMBER()` with `PARTITION BY` to identify duplicates.
+
 ```sql
 WITH Duplicate_CTE AS (
     SELECT *,
-    ROW_NUMBER() OVER (
-        PARTITION BY company, location, total_laid_off, 
-                     percentage_laid_off, date, funds_raised_millions
-    ) AS row_num
+           ROW_NUMBER() OVER (
+               PARTITION BY company,
+                            location,
+                            total_laid_off,
+                            percentage_laid_off,
+                            date,
+                            funds_raised_millions
+           ) AS row_num
     FROM layoffs_staging
 )
-SELECT * FROM Duplicate_CTE WHERE row_num > 1;
+SELECT *
+FROM Duplicate_CTE
+WHERE row_num > 1;
 ```
 
-#### MySQL Limitation Workaround
-MySQL doesn't support DELETE operations on CTEs directly.
+#### MySQL Workaround
 
-**Solution**: Create intermediate table with `row_num` as permanent column
+Because duplicate rows cannot be deleted directly from the CTE result, an intermediate staging table with a persistent `row_num` column is used.
+
 ```sql
--- Create table with row_num column
 CREATE TABLE layoffs_staging2 (
     company TEXT,
     location TEXT,
@@ -90,252 +102,253 @@ CREATE TABLE layoffs_staging2 (
     row_num INT
 );
 
--- Insert with row numbers
 INSERT INTO layoffs_staging2
-SELECT *, ROW_NUMBER() OVER (...) AS row_num FROM layoffs_staging;
+SELECT *,
+       ROW_NUMBER() OVER (...) AS row_num
+FROM layoffs_staging;
 
--- Delete duplicates
-DELETE FROM layoffs_staging2 WHERE row_num > 1;
+DELETE
+FROM layoffs_staging2
+WHERE row_num > 1;
 
--- Drop temporary column
-ALTER TABLE layoffs_staging2 DROP COLUMN row_num;
+ALTER TABLE layoffs_staging2
+DROP COLUMN row_num;
 ```
 
-**Result**: 5 duplicate records removed
+**Result**: 5 duplicate records removed.
 
 ---
 
 ### 3. Data Standardization
 
-#### 3A. Whitespace Removal
-**Problem**: `company` column contains unnecessary leading/trailing spaces
+#### Company Name Cleanup
+
+**Problem**: Company names contain unnecessary leading or trailing whitespace.
 
 ```sql
--- Identify issues
-SELECT DISTINCT company FROM layoffs_staging2;
-
--- Apply fix
-UPDATE layoffs_staging2 SET company = TRIM(company);
+UPDATE layoffs_staging2
+SET company = TRIM(company);
 ```
 
-#### 3B. Industry Normalization
-**Problem**: Inconsistent cryptocurrency naming conventions
-- "Crypto"
-- "CryptoCurrency"  
-- "Crypto Currency"
+---
+
+#### Industry Normalization
+
+**Problem**: Cryptocurrency companies use multiple category labels:
+- `Crypto`
+- `CryptoCurrency`
+- `Crypto Currency`
 
 ```sql
--- Standardize to single format
 UPDATE layoffs_staging2
 SET industry = 'Crypto'
 WHERE industry LIKE '%Crypto%';
 ```
 
-#### 3C. Location Corrections
-**Problem**: UTF-8 encoding errors in city names
+---
 
-**Malmö encoding issue**:
+#### Location Corrections
+
+**Problem**: Some city values are malformed in the source data.
+
+Examples:
+- Malmö represented as a truncated / malformed value
+- Florianópolis represented as a truncated / malformed value
+
 ```sql
 UPDATE layoffs_staging2
 SET location = 'Malmo'
-WHERE company LIKE 'Oatly' AND location LIKE "%Malm%";
-```
+WHERE company LIKE 'Oatly'
+  AND location LIKE '%Malm%';
 
-**Florianópolis encoding issue**:
-```sql
 UPDATE layoffs_staging2
 SET location = 'Florianopolis'
-WHERE company LIKE 'Involves' AND location LIKE "%Floria%";
-```
-
-#### 3D. Country Name Cleanup
-**Problem**: "United States." has trailing period
-
-```sql
-UPDATE layoffs_staging2
-SET Country = TRIM(TRAILING '.' FROM country)
-WHERE Country LIKE 'United States%';
+WHERE company LIKE 'Involves'
+  AND location LIKE '%Floria%';
 ```
 
 ---
 
-### 4. NULL Value Imputation
+#### Country Name Cleanup
 
-#### Industry Column Strategy
-**Problem**: 4 missing industry values, but same companies may have industry elsewhere
+**Problem**: `United States.` contains a trailing period.
 
-**Solution**: Self-join to populate missing industries from matching companies
 ```sql
--- Convert blanks to NULL for consistency
+UPDATE layoffs_staging2
+SET country = TRIM(TRAILING '.' FROM country)
+WHERE country LIKE 'United States%';
+```
+
+---
+
+### 4. NULL Value Handling
+
+#### Industry Imputation
+
+**Problem**: Four rows have missing industry values, while the same companies have populated industry values elsewhere in the dataset.
+
+**Solution**: Use a self-join to populate the missing category from another row belonging to the same company.
+
+```sql
 UPDATE layoffs_staging2
 SET industry = NULL
 WHERE industry = '';
 
--- Populate from matching company records
-UPDATE layoffs_staging2 t1 
-JOIN layoffs_staging2 t2 ON t1.company = t2.company
+UPDATE layoffs_staging2 t1
+JOIN layoffs_staging2 t2
+  ON t1.company = t2.company
 SET t1.industry = t2.industry
-WHERE t1.industry IS NULL AND t2.industry IS NOT NULL;
+WHERE t1.industry IS NULL
+  AND t2.industry IS NOT NULL;
 ```
 
-**Logic**: If Company X has industry "Finance" in row 5, apply "Finance" to row 12 where it's NULL.
+This approach reuses information already present in the dataset instead of assigning a new category manually.
 
 ---
 
-### 5. Data Type Conversions
+### 5. Data Type Conversion
 
-#### Date Column Transformation
-**Problem**: Date stored as TEXT in `m/d/Y` format
+#### Date Column
 
-**Solution**: Convert to proper DATE type
+**Problem**: Date values are stored as `TEXT`.
+
+**Solution**: Parse the source format and convert the column to `DATE`.
+
 ```sql
--- Parse text date to MySQL date format
 UPDATE layoffs_staging2
 SET date = STR_TO_DATE(date, '%m/%d/%Y');
 
--- Change column data type
 ALTER TABLE layoffs_staging2
 MODIFY COLUMN date DATE;
 ```
 
-**Result**: Proper date handling for temporal queries
+**Result**: Date values can be used reliably in temporal queries.
 
 ---
 
-### 6. Strategic Record Removal
+### 6. Remove Unusable Records
 
-#### Unusable Records
-**Problem**: 740 records missing BOTH `total_laid_off` AND `percentage_laid_off`
+**Problem**: 740 records are missing both:
+- `total_laid_off`
+- `percentage_laid_off`
 
-**Analysis**: Records with no layoff metrics cannot provide value for layoff analysis
+Without either metric, the records cannot support analysis of layoff volume or severity.
 
 ```sql
--- Identify unusable records
-SELECT * FROM layoffs_staging2
-WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
-
--- Remove
-DELETE FROM layoffs_staging2
-WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
+DELETE
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL
+  AND percentage_laid_off IS NULL;
 ```
 
-**Justification**: Without either metric, we cannot determine if/how many layoffs occurred
+---
+
+## SQL Techniques Demonstrated
+
+- **Common Table Expressions (CTEs)** — duplicate detection
+- **Window Functions** — `ROW_NUMBER()` with `PARTITION BY`
+- **Self-Joins** — filling missing categorical values from matching company records
+- **String Functions** — `TRIM`, `TRIM(TRAILING)`, `LIKE`
+- **Date Functions** — `STR_TO_DATE()`
+- **Schema Modification** — `ALTER TABLE`, `MODIFY COLUMN`
+- **Staging Tables** — non-destructive cleaning workflow
+- **Incremental validation** — inspection before `UPDATE` and `DELETE`
 
 ---
 
-## Technical Implementation
+## Cleaning Results
 
-### SQL Techniques Demonstrated
+### Before Cleaning
 
-**Advanced Query Patterns**
-- **Common Table Expressions (CTEs)**: Duplicate detection logic
-- **Window Functions**: ROW_NUMBER() with PARTITION BY
-- **Self-Joins**: Cross-referencing same table for data imputation
-- **String Functions**: TRIM, TRIM(TRAILING), LIKE pattern matching
-- **Date Functions**: STR_TO_DATE() for parsing
-- **Schema Modification**: ALTER TABLE, MODIFY COLUMN
-
-**Best Practices Applied**
-- ✓ **Non-destructive workflow** (staging tables)
-- ✓ **Incremental validation** (SELECT before UPDATE/DELETE)
-- ✓ **Explicit column specification** (avoid SELECT *)
-- ✓ **Descriptive naming** (layoffs_staging2 vs temp_table)
-- ✓ **Commented code** explaining decisions
-- ✓ **Systematic approach** (duplicates → standardization → nulls → types)
-
----
-
-## Key Insights
-
-### Data Quality Improvements
-
-**Before Cleaning**
 | Issue | Count |
-|-------|-------|
-| Total Records | 2,361 |
-| Duplicates | 5 |
-| Missing Industry | 4 |
-| Whitespace Issues | Multiple |
-| Encoding Errors | 2+ locations |
-| Format Inconsistencies | Multiple industries |
-| Wrong Data Types | 1 (date) |
-| Unusable Records | 740 |
+|---|---:|
+| Total records | 2,361 |
+| Duplicate records | 5 |
+| Missing industry | 4 |
+| Missing `total_laid_off` | 740 |
+| Missing `percentage_laid_off` | 785 |
+| Missing `funds_raised_millions` | 209 |
+| Wrong date type | 1 column |
+| Category / text inconsistencies | Multiple |
 
-**After Cleaning**
+### After Cleaning
+
 | Metric | Result |
-|--------|--------|
-| Clean Records | ~1,616 |
-| Duplicates | 0 |
-| Standardized Industries | ✓ |
-| Trimmed Text Fields | ✓ |
-| Corrected Locations | ✓ |
-| Proper Date Format | ✓ |
-| Data Type Integrity | ✓ |
+|---|---|
+| Final records | 1,616 |
+| Duplicate records | 0 |
+| Industry labels | Standardized |
+| Company names | Trimmed |
+| Selected malformed locations | Corrected |
+| Country formatting | Standardized |
+| Date column | Converted to `DATE` |
 
-**Data Reduction**: 2,361 → ~1,616 records (31% removal justified by lack of metrics)
-
-### Technical Insights
-1. **MySQL CTE limitations**: Cannot DELETE from CTE; requires intermediate table workaround
-2. **Self-join power**: Effective technique for imputing missing categorical values
-3. **TRIM variations**: TRIM(TRAILING) for targeted whitespace removal
-4. **STR_TO_DATE importance**: Critical for converting text dates to queryable DATE type
-
-### Data Quality Insights
-1. **31% records lacked metrics**: Highlights importance of data collection standards
-2. **Encoding errors localized**: UTF-8 issues primarily in non-English city names
-3. **Industry naming chaos**: Lack of data entry standards creates cleanup overhead
-4. **Duplicate sources**: Near-identical records suggest potential ETL issues
+**Final dataset**: 2,361 → 1,616 records  
+- 5 duplicate records removed
+- 740 records excluded because both layoff metrics were missing
 
 ---
 
-## Business Value
+## Key Technical Insights
 
-### Analysis-Ready Dataset
-- **Temporal analysis**: Proper DATE type enables time-series queries
-- **Industry insights**: Standardized categories enable grouping/aggregation
-- **Geographic analysis**: Clean country/location data for regional breakdowns
-- **Funding correlation**: Relate layoffs to company funding stage
+1. **Window functions provide a reliable way to detect duplicate records across multiple fields.**
 
-### Use Cases Enabled
-- **Layoff trend analysis**: Track patterns by industry/country/time
-- **Company stage analysis**: Compare layoffs by funding stage
-- **Severity assessment**: Analyze percentage_laid_off distributions
-- **Economic indicators**: Aggregate data for macro insights
+2. **Self-joins can recover missing categorical values when the same entity appears elsewhere with complete information.**
 
-### Data Integrity
-- **Reliable aggregations**: No duplicate inflation of metrics
-- **Accurate joins**: Clean company/location names for integration
-- **Consistent reporting**: Standardized categories across analyses
+3. **Converting dates from `TEXT` to `DATE` is necessary for reliable filtering, grouping, and temporal analysis.**
+
+4. **Staging tables allow destructive cleaning operations without modifying the original dataset.**
+
+---
+
+## Data Quality Findings
+
+- Five duplicate records were identified and removed
+- Four missing industry values could be recovered from matching company records
+- Multiple cryptocurrency labels required standardization
+- Selected city values required manual correction
+- 740 records lacked both layoff-volume metrics and were excluded from the analysis-ready dataset
+
+---
+
+## Business / Analytical Value
+
+- **Temporal analysis** — proper `DATE` values enable time-based queries
+- **Industry analysis** — standardized categories support reliable grouping
+- **Geographic analysis** — cleaned country and location values improve regional comparisons
+- **Reliable aggregation** — duplicate removal prevents double counting
+- **Severity analysis** — retained records contain at least one usable layoff metric
 
 ---
 
 ## Tools & Technologies
 
 - **Database**: MySQL
-- **SQL Version**: Compatible with MySQL 8.0+ (window functions)
+- **Compatibility**: MySQL 8.0+
 - **Encoding**: UTF8MB4
-- **Collation**: utf8mb4_0900_ai_ci
+- **Collation**: `utf8mb4_0900_ai_ci`
 
 ---
 
 ## Files Structure
 
-- `Layoffs_raw.csv` - original dataset (2,361 records, 9 attributes)
-- `layoffs_cleaning_queries.sql` - complete cleaning script with:
-  - Staging table creation
-  - Duplicate removal logic
-  - Standardization queries
-  - NULL handling procedures
-  - Data type conversions
-  - Inline documentation
+- `Layoffs_raw.csv` — original dataset (2,361 records, 9 attributes)
+- `layoffs_cleaning_queries.sql` — complete cleaning script containing:
+  - staging table creation
+  - duplicate detection and removal
+  - text standardization
+  - NULL handling
+  - data type conversion
+  - record filtering
+  - inline documentation
 
 ---
 
 ## Future Enhancement Opportunities
 
-- **Automated validation**: Create stored procedures for ongoing data ingestion
-- **Audit logging**: Track changes made during cleaning process
-- **Data quality metrics**: Calculate quality scores pre/post cleaning
-- **Constraint addition**: Add foreign keys, check constraints post-cleaning
-- **View creation**: Build analysis-ready views on cleaned data
-- **Index optimization**: Add indexes on commonly queried columns (industry, country, date)
+- **Automated validation** — stored procedures for repeated ingestion checks
+- **Audit logging** — record cleaning actions and row-count changes
+- **Data-quality metrics** — calculate pre/post cleaning quality indicators
+- **Constraints** — add appropriate validation constraints after cleaning
+- **Views** — create analysis-ready views
+- **Indexing** — optimize commonly filtered columns such as `industry`, `country`, and `date`
