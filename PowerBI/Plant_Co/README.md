@@ -3,7 +3,7 @@
 ## Overview
 
 Interactive Power BI dashboard built on a fictional Plant Company sales dataset.  
-The project analyzes quantity sold, sales revenue, and gross profit across countries, product types, and time periods — with a focus on Year-to-Date (YTD) vs Prior Year-to-Date (PYTD) performance comparison.
+The project analyzes quantity sold, sales revenue, and gross profit across countries, product types, and time periods, with a focus on Year-to-Date (YTD) vs Prior Year-to-Date (PYTD) performance comparison.
 
 ---
 
@@ -21,21 +21,21 @@ The project analyzes quantity sold, sales revenue, and gross profit across count
 - **GP%** — Gross Profit margin
 
 ### Bottom 10 Countries (Treemap)
-- Identifies worst-performing markets by YTD vs PYTD delta
-- Quick visual triage of underperforming regions
+- Identifies the countries with the lowest YTD vs PYTD performance delta
+- Supports quick comparison of underperforming markets
 
 ### Waterfall Chart — YTD vs PYTD by Month, Country, Product
 - Month-by-month breakdown of increases and decreases vs prior year
 - Drill-down capability: Month → Country → Product
 
 ### Stacked Bar + Line Chart — YTD & PYTD by Month
-- Sales/Quantity/Profit split by product type: **Indoor**, **Landscape**, **Outdoor**
+- Sales / Quantity / Gross Profit split by product type: **Indoor**, **Landscape**, **Outdoor**
 - Overlaid PYTD line for direct period comparison
 
-### Scatter Plot — Account Profitability Segmentation
+### Scatter Plot — Account Profitability Analysis
 - Each point represents a customer account
-- Axes: GP% (profitability) vs Value YTD (volume)
-- Reference lines at average GP% and quantity threshold for quadrant analysis
+- Axes: GP% (profitability) vs Value YTD
+- Reference lines support quadrant-based account comparison
 
 ---
 
@@ -91,6 +91,7 @@ CALCULATE(
     Dim_Date[Inpast] = TRUE
 )
 ```
+
 *(analogous measures for Quantity and Gross Profit)*
 
 ### Dynamic Switch Measures
@@ -119,17 +120,17 @@ _Report title =
 
 - Switch between Sales / Quantity / Gross Profit with a single click
 - Filter by year
-- Cross-filter across all visuals
+- Cross-filter across report visuals
 - Drill down in waterfall chart by Month → Country → Product
 
 ---
 
 ## Business Value
 
-- Year-over-year performance monitoring across all key metrics
-- Identification of underperforming markets (Bottom 10 treemap)
-- Customer profitability segmentation for account management
-- Product type contribution analysis over time
+- **Year-over-year monitoring** - compare YTD and PYTD performance across core metrics
+- **Market analysis** - identify countries with the weakest YTD vs PYTD performance
+- **Customer profitability analysis** - compare accounts using GP% and YTD value
+- **Product contribution analysis** - compare product-type performance over time
 
 ---
 
@@ -138,4 +139,5 @@ _Report title =
 - Power BI Desktop
 - DAX (Data Analysis Expressions)
 - Star schema data modeling
+- Power Query
 - Time intelligence functions (`TOTALYTD`, `SAMEPERIODLASTYEAR`)
