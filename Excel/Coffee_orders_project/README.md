@@ -41,7 +41,7 @@ The project tracks sales trends, customer behavior, and product performance for 
 
 ## Technical Implementation
 
-### Data Model
+### Workbook Data Structure
 - **Orders table** - main transactional data with computed fields
 - **Customers table** - customer profiles and loyalty information
 - **Products table** - product catalog with pricing structure
@@ -63,30 +63,28 @@ The project tracks sales trends, customer behavior, and product performance for 
 
 ## Key Insights
 
-- **Seasonal patterns**: Clear sales trends visible by coffee type across time periods
-- **Geographic performance**: United States represents largest market share
-- **Customer loyalty impact**: Loyalty card holders demonstrate higher purchase frequency
-- **Product preferences**: Distinct roast and size preferences by market segment
-- **Top customer concentration**: Small percentage of customers drive significant revenue
+- **Sales trends**: Sales performance varies across time periods and coffee types
+- **Geographic performance**: United States represents the largest market in the dataset
+- **Customer concentration**: Top-customer ranking highlights accounts with the highest total sales
+- **Product comparison**: Dashboard filters allow roast type and package size performance to be compared across selected periods
 
 ---
 
 ## Business Value
 
-- **Trend identification** - seasonal patterns and growth trajectories by coffee type
-- **Geographic insights** - market performance comparison across countries
-- **Customer segmentation** - identification of high-value customers
-- **Product mix analysis** - understanding of size and roast preferences
-- **Loyalty impact assessment** - ability to filter by loyalty card status
+- **Sales monitoring** - track changes in sales performance over time and by coffee type
+- **Geographic comparison** - compare performance across the United States, Ireland, and United Kingdom
+- **Customer analysis** - identify customers generating the highest total sales
+- **Product analysis** - compare sales across roast types and package sizes
 
 ---
 
 ## Tools & Technologies
 
 - Microsoft Excel
-- Advanced formulas (XLOOKUP, INDEX-MATCH)
+- Lookup formulas (XLOOKUP, INDEX-MATCH)
 - Interactive dashboards
-- Data modeling across multiple tables
+- Multi-table workbook structure
 
 ---
 
