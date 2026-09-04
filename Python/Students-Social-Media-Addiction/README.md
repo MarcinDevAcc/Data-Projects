@@ -1,10 +1,10 @@
-# Students Social Media Addiction - Behavioral Analysis (Python)
+# Students Social Media Addiction - Exploratory Data Analysis (Python)
 
 ## Overview
 
-Comprehensive data analysis exploring the relationship between social media usage patterns and their impact on students' academic performance, mental health, sleep quality, and interpersonal relationships.
+Exploratory data analysis examining associations between social media usage patterns and self-reported academic performance, mental health, sleep duration, and relationship conflicts.
 
-The project investigates behavioral patterns across 705 students from 26 countries, examining correlations between addiction scores, daily usage hours, and various life quality indicators.
+The project analyzes behavioral patterns across **705 students from 26 countries**, focusing on relationships between addiction scores, daily usage hours, and selected quality-of-life indicators.
 
 Dataset source: [Kaggle - Social Media Addiction vs Relationships](https://www.kaggle.com/datasets/adilshamim8/social-media-addiction-vs-relationships)
 
@@ -15,7 +15,7 @@ Dataset source: [Kaggle - Social Media Addiction vs Relationships](https://www.k
 ### Sample Demographics
 - **705 students** across 26 countries
 - **Age range**: 18-24 years
-- **Gender distribution**: 50/50 (353 Female, 352 Male)
+- **Gender distribution**: 353 Female, 352 Male
 - **Academic levels**:
   - Undergraduate: 353 (50.1%)
   - Graduate: 325 (46.1%)
@@ -26,37 +26,37 @@ Dataset source: [Kaggle - Social Media Addiction vs Relationships](https://www.k
 - **Daily Usage**: Average hours spent on social media
 - **Mental Health Score**: 1-10 self-reported rating
 - **Sleep Hours**: Average nightly sleep duration
-- **Relationship Conflicts**: 0-5 scale measuring social media-related disputes
-- **Academic Performance Impact**: Yes/No binary indicator
+- **Relationship Conflicts**: 0-5 scale
+- **Academic Performance Impact**: Yes/No self-reported indicator
 
 ### Platforms Tracked
-Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
+Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others.
 
 ---
 
 ## Analysis Components
 
 ### Demographic Analysis
-- **Age Distribution** - student age patterns and clustering
-- **Gender Distribution** - balanced male/female representation
-- **Academic Level Distribution** - educational stage breakdown
-- **Geographic Distribution** - global student participation (26 countries)
+- Age distribution
+- Gender distribution
+- Academic-level distribution
+- Geographic distribution across 26 countries
 
 ### Usage Pattern Analysis
-- **Platform Popularity** - most-used social media platforms among students
-- **Average Daily Usage** - time spent analysis with distribution visualization
-- **Usage by Demographics** - cross-tabulation with age, gender, academic level
+- Platform popularity
+- Daily usage-hour distribution
+- Usage comparison by demographic groups
 
-### Impact Assessment
-- **Academic Performance Correlation** - relationship between usage and grades
-- **Mental Health Correlation** - usage patterns vs. mental health scores
-- **Sleep Quality Analysis** - sleep hours vs. social media addiction scores
-- **Sleep Category Comparison** - boxplot analysis across sleep duration categories
+### Association Analysis
+- Daily usage and self-reported academic impact
+- Social media usage and mental health score
+- Sleep hours and addiction score
+- Relationship conflicts and addiction score
+- Sleep-category comparison using boxplots
 
-### Behavioral Insights
-- **Relationship Conflicts** - social media's role in interpersonal disputes
-- **Addiction Severity Segmentation** - grouping by addiction score levels
-- **Geographic Addiction Patterns** - choropleth map showing country-level addiction scores
+### Geographic Analysis
+- Country-level addiction-score comparison
+- Interactive choropleth visualization
 
 ---
 
@@ -64,68 +64,55 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 
 ### Data Analysis Libraries
 - **pandas** - data manipulation and aggregation
-- **numpy** - statistical calculations
+- **numpy** - numerical calculations
 
 ### Visualization Stack
-- **matplotlib** - base plotting and customization
-- **seaborn** - statistical visualizations (boxplots, heatmaps, distributions)
-- **plotly.express** - interactive choropleth maps
+- **matplotlib** - base plotting
+- **seaborn** - statistical visualizations
+- **plotly.express** - interactive geographic visualization
 
 ### Statistical Methods
-- Correlation analysis (Pearson coefficients)
-- Distribution analysis (histograms, KDE plots)
-- Categorical comparison (boxplots)
-- Aggregation and grouping operations
+- Pearson correlation analysis
+- Distribution analysis
+- Grouped aggregation
+- Categorical comparison
+- Scatter plots and regression visualization
 
 ### Notebook Structure
 - Data import and initial exploration
-- Feature engineering (Sleep_Category derivation)
-- 11 distinct analysis sections with visualizations
-- Interactive geographic visualization
+- Feature engineering (`Sleep_Category`)
+- 11 analysis sections
+- Static and interactive visualizations
 
 ---
 
 ## Key Insights
 
-### Usage Patterns
-- **Mean addiction score**: 6.4/9 (moderate-high addiction prevalence)
-- **Average daily usage**: Varies significantly by platform preference
-- **Peak usage demographics**: Identification of high-risk groups
+### Sample Characteristics
+- **Mean addiction score**: 6.4/9 across the analyzed sample
+- **Platform usage**: Daily usage levels vary across preferred-platform groups
+- **Demographic coverage**: The dataset includes students from 26 countries and three academic levels
 
-### Correlations Identified
-- **Sleep-Addiction relationship**: Inverse correlation between sleep quality and addiction scores
-- **Academic impact**: Clear patterns between usage and self-reported performance effects
-- **Mental health trends**: Correlation between excessive usage and lower mental health scores
-- **Relationship conflicts**: Positive correlation with addiction severity
+### Associations Identified
+- **Sleep and addiction score**: Higher addiction scores are associated with lower sleep duration
+- **Mental health**: Higher usage / addiction measures are associated with lower self-reported mental health scores
+- **Relationship conflicts**: Higher addiction scores are associated with more reported conflicts
+- **Academic performance**: Usage patterns differ between students who report academic impact and those who do not
 
-### Geographic Insights
-- **Country-level addiction mapping**: Visual representation of global patterns
-- **Cultural variations**: Differences in usage patterns across regions
-- **Top affected countries**: India leads in sample size (53 students)
+### Geographic Analysis
+- Country-level differences can be compared through the interactive choropleth map
+- India has the largest sample representation with 53 students
+
+> These findings describe associations within the dataset and should not be interpreted as evidence of causation.
 
 ---
 
-## Business Applications
+## Analytical Applications
 
-### Educational Institutions
-- **Intervention programs**: Target high-risk student groups
-- **Policy development**: Evidence-based social media guidelines
-- **Mental health services**: Prioritize resources for affected demographics
-
-### Health & Wellness
-- **Screening tools**: Identify students at risk of addiction
-- **Sleep hygiene programs**: Address social media's impact on rest
-- **Counseling priorities**: Focus on relationship and mental health support
-
-### Platform Developers
-- **Usage time analytics**: Understanding engagement patterns
-- **Wellness features**: Design interventions based on behavioral data
-- **Demographic targeting**: Age-appropriate content and controls
-
-### Research Community
-- **Behavioral science**: Understanding digital addiction mechanisms
-- **Cross-cultural studies**: Geographic variation in social media impact
-- **Longitudinal tracking**: Framework for ongoing addiction monitoring
+- **Behavioral exploration** - compare usage patterns across demographic groups
+- **Association analysis** - examine relationships between social media use, sleep, mental health, and conflicts
+- **Geographic comparison** - visualize country-level differences within the sample
+- **Further research** - identify relationships that could be tested using larger or longitudinal datasets
 
 ---
 
@@ -137,11 +124,11 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 4. **Platform Usage** - comparative bar chart
 5. **Daily Usage Hours** - distribution analysis
 6. **Academic Performance Impact** - comparative visualization
-7. **Mental Health Correlation** - scatter plot with regression line
-8. **Sleep Hours Correlation** - bivariate analysis
-9. **Relationship Conflicts** - categorical comparison
+7. **Mental Health Association** - scatter plot with regression line
+8. **Sleep Hours Association** - bivariate analysis
+9. **Relationship Conflicts** - categorical / correlation analysis
 10. **Addiction by Sleep Category** - boxplot comparison
-11. **Geographic Addiction Map** - interactive choropleth (Plotly)
+11. **Geographic Addiction Map** - interactive choropleth
 
 ---
 
@@ -151,11 +138,12 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 - Python 3.12
 
 ### Core Libraries
-- pandas - data manipulation
-- matplotlib - static visualizations
-- seaborn - statistical graphics
-- plotly - interactive maps
-- kaggle API - dataset retrieval
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- Kaggle API
 
 ### Development Environment
 - Jupyter Notebook
@@ -172,8 +160,9 @@ Instagram, TikTok, Twitter, Facebook, Snapchat, LinkedIn, YouTube, and others
 
 ## Reproducibility
 
-The analysis is fully reproducible:
-1. Dataset automatically downloadable via Kaggle API
-2. All dependencies listed in import statements
-3. Sequential execution of notebook cells produces all visualizations
-4. No external data files required beyond initial CSV
+The analysis is reproducible through sequential notebook execution:
+
+1. Dataset can be downloaded using the Kaggle API
+2. Required libraries are imported directly in the notebook
+3. Notebook cells reproduce the analysis and visualizations
+4. No additional external data sources are required beyond the source dataset
