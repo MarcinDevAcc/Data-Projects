@@ -22,11 +22,6 @@ ETL pipeline extracting data from CSV and REST API sources, validating and recon
 
 [![Python_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/CRM_ERP_Cover.jpg)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/CRM_ERP_Reconciliation_Pipeline)
 
-#### Students Social Media Addiction | Exploratory Data Analysis
-Exploratory analysis of student social media usage, focusing on relationships with sleep, mental health, academic performance, and interpersonal conflicts.
-
-[![Python_3](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Addiction-cover.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Python/Students-Social-Media-Addiction)
-
 # SQL
 
 #### Layoffs Data Cleaning
