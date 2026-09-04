@@ -46,11 +46,6 @@ RFM customer segmentation project using Pivot Tables, dynamic formulas, and quan
 
 [![Excel_2](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Tile_Store_Orders_Screenshot.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel/Tile_Store_Data_Analysis)
 
-#### Cars Dataset 2024 | Market Analysis
-Excel-based analysis of automotive pricing, performance, fuel types, and market segments using Pivot Tables, data transformation, and comparative visualizations.
-
-[![Excel_3](https://raw.github.com/MarcinDevAcc/Data-Projects/main/images/Cars.png)](https://github.com/MarcinDevAcc/Data-Projects/tree/main/Excel/The_Ultimate_Cars_Dataset_2024)
-
 # Power BI
 
 #### Superstore Sales Dashboard
