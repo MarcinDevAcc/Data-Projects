@@ -2,189 +2,185 @@
 
 ## Overview
 
-Interactive Tableau dashboard analyzing customer satisfaction and service quality for British Airways based on 1,324 verified passenger reviews.  
-The project provides comprehensive insights into flight experience across multiple dimensions including aircraft types, traveler segments, routes, and service categories spanning 2015-2023.
+Interactive Tableau dashboard analyzing British Airways passenger reviews and service ratings across multiple dimensions including aircraft types, traveler segments, geographic regions, and service categories.
+
+The project is based on **1,324 passenger reviews** covering the period **2015-2023**.
 
 ---
 
 ## Dataset Scope
 
 ### Review Coverage
-- **1,324 passenger reviews** from British Airways flights
-- **Time period**: 2015-2023 (9 years)
-- **Global reach**: 251 countries represented
-- **150+ aircraft types** including Boeing and Airbus models
-- **19 attributes** per review including ratings, demographics, and feedback
+- **1,324 passenger reviews**
+- **Time period**: 2015-2023
+- **19 attributes** per review including ratings, traveler information, and flight details
+- **150+ aircraft types** represented in the review dataset
+- **Geographic reference data**: 251 countries available for continent and region mapping
 
 ### Rating Dimensions
 - **Overall Rating**: 1-10 scale (average: 4.2)
-- **Seat Comfort**: Passenger comfort assessment
-- **Cabin Staff Service**: Crew interaction quality (average: 3.3)
-- **Food & Beverages**: Meal service quality (average: 2.4)
-- **Ground Service**: Airport and check-in experience (average: 3.0)
-- **Entertainment**: In-flight entertainment system (average: 1.4)
-- **Value For Money**: Price-to-service ratio (average: 2.8)
+- **Seat Comfort**: average 2.9
+- **Cabin Staff Service**: average 3.3
+- **Food & Beverages**: average 2.4
+- **Ground Service**: average 3.0
+- **Entertainment**: average 1.4
+- **Value For Money**: average 2.8
 
 ### Customer Segments
-- **Traveller Types**: Couple Leisure (34%), Solo Leisure (29%), Business (24%), Family Leisure (13%)
-- **Seat Classes**: Economy (46%), Business (38%), Premium Economy (10%), First Class (7%)
-- **Trip Verification**: Mix of verified and unverified reviews
+- **Traveller Types**:
+  - Couple Leisure — 34%
+  - Solo Leisure — 29%
+  - Business — 24%
+  - Family Leisure — 13%
+- **Seat Classes**:
+  - Economy — 46%
+  - Business — 38%
+  - Premium Economy — 10%
+  - First Class — 7%
+- **Trip Verification**: Dataset includes both verified and unverified reviews
 
-### Aircraft Fleet Coverage
+### Aircraft Review Coverage
 Top aircraft by review volume:
-- A320 (263 reviews)
-- Boeing 777 (177 reviews)
-- A380 (124 reviews)
-- Boeing 747-400 (97 reviews)
-- Boeing 777-200 (80 reviews)
+- A320 — 263 reviews
+- Boeing 777 — 177 reviews
+- A380 — 124 reviews
+- Boeing 747-400 — 97 reviews
+- Boeing 777-200 — 80 reviews
 
 ---
 
 ## Key Features
 
 ### Metric Selection & Overview
-- **Interactive metric picker** - radio button selection for focused analysis
-- **7 key performance indicators** displayed prominently:
-  - Average Rating (4.2)
-  - Avg. Cabin Staff Service (3.3)
-  - Avg. Entertainment (1.4)
-  - Avg. Food & Beverages (2.4)
-  - Avg. Ground Service (3.0)
-  - Avg. Seat Comfort (2.9)
-  - Avg. Value For Money (2.8)
+- **Interactive metric picker** using Tableau parameters
+- **7 key metrics** displayed:
+  - Average Rating — 4.2
+  - Avg. Cabin Staff Service — 3.3
+  - Avg. Entertainment — 1.4
+  - Avg. Food & Beverages — 2.4
+  - Avg. Ground Service — 3.0
+  - Avg. Seat Comfort — 2.9
+  - Avg. Value For Money — 2.8
 
 ### Temporal Analysis
-- **Average Overall Rating By Month** - line chart tracking satisfaction trends from 2017-2023
-- **Date range slider** - filter reviews by specific time periods (March 2016 - October 2023)
-- **Trend identification** - visualize seasonal patterns and long-term service quality changes
+- **Average Overall Rating by Month**
+- **Date range slider** for filtering selected review periods
+- Monthly rating changes can be compared across the available time range
 
 ### Geographic Analysis
-- **Interactive world map** - choropleth visualization showing average ratings by country
-- **Color-coded performance** - darker shades indicate better/worse ratings
-- **Global coverage** - insights from 251 countries
-- **Continent filter** - drill down by geographic region
+- **Interactive world map** showing average ratings by country
+- Color intensity represents average rating
+- **Continent filter** for regional comparison
+- Review data enriched with geographic metadata from the supporting country table
 
 ### Aircraft Performance
-- **Average Overall Rating By Aircraft** - dual-axis bar chart
-  - Orange bars: Average rating per aircraft model
-  - Teal bars: Number of reviews per aircraft type
-- **Fleet comparison** - Boeing vs. Airbus performance
-- **Aircraft filter** - analyze specific models
+- **Average Overall Rating by Aircraft**
+- Dual-axis comparison of:
+  - average rating
+  - review count
+- Aircraft-specific filtering
+- Boeing and Airbus models can be compared within the dashboard
 
-### Advanced Filtering
-- **Traveller Type** - filter by Couple Leisure, Solo Leisure, Business, Family Leisure
-- **Seat Type** - filter by Economy, Business, Premium Economy, First Class
-- **Aircraft selection** - dropdown for specific aircraft models
-- **Continent selection** - geographic filtering
+### Interactive Filtering
+- **Traveller Type**
+- **Seat Class**
+- **Aircraft**
+- **Continent**
+- **Date range**
+- Dashboard actions support cross-filtering between visualizations
 
 ---
 
 ## Technical Implementation
 
 ### Data Architecture
-- **Primary dataset**: ba_reviews.csv (1,324 rows, 19 columns)
-- **Supporting dataset**: Countries.csv (251 countries with continent/region mapping)
-- **Data blending**: Join on country field for geographic visualization
+- **Primary dataset**: `ba_reviews.csv` — 1,324 rows, 19 columns
+- **Supporting dataset**: `Countries.csv` — geographic reference table with 251 countries
+- **Data join**: review data enriched with continent and region information using the country field
 
 ### Tableau Features Used
-- **Parameters** - metric selection toggle
-- **Calculated fields** - average rating computations by dimension
-- **Map visualization** - geographic bubble/choropleth map with Mapbox integration
-- **Line chart** - temporal trend analysis with date aggregation
-- **Dual-axis bar chart** - rating vs. review count comparison
-- **Filters** - multiple dimension slicers (date, traveler type, seat class, aircraft)
-- **Actions** - cross-filtering between visualizations
-- **Dashboard layout** - responsive design with organized sections
+- **Parameters** — metric selection
+- **Calculated fields** — rating aggregations
+- **Map visualization** — country-level geographic analysis
+- **Line chart** — temporal analysis
+- **Dual-axis chart** — rating vs review count comparison
+- **Filters** — date, traveler type, seat class, aircraft, continent
+- **Dashboard actions** — cross-filtering between visuals
+- **Dashboard layout** — organized single-dashboard presentation
 
 ### Design Elements
-- **Color scheme**: Orange brand color for primary metrics, teal for supporting data
-- **Typography**: Clear hierarchy with metric labels and values
-- **Layout**: Organized into quadrants (metrics bar, temporal, geographic, aircraft analysis)
-- **Interactivity**: Click-to-filter functionality across all charts
+- Brand-oriented orange accent for primary metrics
+- Supporting teal color for secondary values
+- Clear metric hierarchy
+- Structured layout separating:
+  - KPI overview
+  - temporal analysis
+  - geographic analysis
+  - aircraft analysis
 
 ---
 
 ## Key Insights
 
-### Overall Performance Metrics
-- **Average rating 4.2/10**: Below-average customer satisfaction indicates service challenges
-- **Entertainment lowest rated (1.4)**: Critical weakness requiring investment
-- **Food quality concerns (2.4)**: Second-lowest metric, passenger dissatisfaction evident
-- **Cabin staff highest rated (3.3)**: Relative strength compared to other metrics
+### Service Ratings
+- **Average overall rating**: 4.2/10
+- **Entertainment** is the lowest-rated service dimension at **1.4**
+- **Food & Beverages** is the second-lowest service metric at **2.4**
+- **Cabin Staff Service** is the highest-rated displayed service dimension at **3.3**
 
-### Aircraft-Specific Insights
-- **Boeing 747-400 best rated (4.7)**: Older aircraft surprisingly performs well
-- **A320 most reviewed (263)**: High volume workhorse of the fleet
-- **Variability by model**: Significant rating differences across aircraft types
-- **Review volume correlation**: Popular aircraft models accumulate more feedback
+### Aircraft Analysis
+- **Boeing 747-400** has the highest displayed average rating at **4.7**
+- **A320** has the highest review count with **263 reviews**
+- Average ratings vary across aircraft models
+- Review volume also differs substantially between aircraft types
 
-### Passenger Segment Patterns
-- **Couple Leisure dominance**: Largest review segment (446 reviews)
-- **Business travelers**: 24% of reviews - important premium segment
-- **Economy class majority**: 46% of reviews from economy passengers
-- **First class premium**: Only 7% of reviews but high-value segment
+### Passenger Segments
+- **Couple Leisure** is the largest traveler group at **34%**
+- **Business travelers** account for **24%** of reviews
+- **Economy Class** represents **46%** of reviews
+- **First Class** represents **7%** of reviews
 
-### Temporal Trends
-- **2017-2023 tracking**: Multi-year performance monitoring available
-- **Volatility visible**: Significant month-to-month rating fluctuations
-- **Post-pandemic impact**: Data spans COVID-19 period, showing service evolution
-- **Recent performance**: 2023 data shows current service quality trajectory
+### Temporal Analysis
+- Ratings can be compared across the available multi-year review period
+- Monthly average ratings fluctuate over time
+- 2023 contains the most recent observations available in the dataset
 
-### Geographic Insights
-- **Global coverage**: Reviews from all major markets
-- **Regional variations**: Different satisfaction levels by country/continent
-- **UK market focus**: Home market heavily represented in reviews
-- **International routes**: Comprehensive coverage of long-haul destinations
+### Geographic Analysis
+- Ratings can be compared across countries represented in the review data
+- Continent-level filtering enables broader regional comparison
+- Geographic metadata is provided through the supporting country reference table
 
 ---
 
-## Business Value
+## Business / Analytical Value
 
-### Service Quality Monitoring
-- **Real-time feedback tracking** - monitor customer satisfaction across fleet
-- **Trend identification** - detect service degradation or improvement patterns
-- **Benchmark analysis** - compare performance across aircraft, routes, classes
-- **Pain point detection** - identify specific areas requiring attention (entertainment, food)
-
-### Strategic Decision Support
-- **Fleet optimization** - retire or refurbish poorly-rated aircraft
-- **Investment prioritization** - allocate resources to weakest service areas
-- **Route planning** - understand satisfaction by destination/region
-- **Product development** - improve entertainment and F&B offerings based on feedback
-
-### Customer Experience Management
-- **Segment-specific insights** - tailor improvements to traveler type needs
-- **Class differentiation** - optimize service levels by seat class
-- **Competitive positioning** - understand how BA performs in customer eyes
-- **Loyalty impact** - address issues affecting repeat business
-
-### Operational Applications
-- **Crew training focus** - maintain cabin staff strength (3.3 rating)
-- **Ground service improvements** - address check-in and airport experience gaps
-- **Catering partnerships** - work with suppliers to improve food quality
-- **Entertainment system upgrades** - critical investment area (1.4 rating)
+- **Service comparison** — compare customer ratings across service dimensions
+- **Aircraft analysis** — compare average ratings and review volume by aircraft type
+- **Passenger segmentation** — analyze reviews by traveler type and seat class
+- **Temporal analysis** — monitor rating changes across the available review period
+- **Geographic comparison** — compare ratings across countries and regions represented in the dataset
 
 ---
 
 ## Tools & Technologies
 
-- **Tableau Desktop** - dashboard development and data visualization
-- **Mapbox** - geographic map integration for country-level analysis
-- **Data sources**: CSV files (reviews and country metadata)
-- **Calculated fields** - custom metrics and aggregations
-- **Parameters & filters** - interactive dashboard functionality
-- **Dashboard actions** - cross-filtering and drill-down capabilities
+- **Tableau Desktop** — dashboard development and visualization
+- **Mapbox** — geographic map integration
+- **CSV data sources** — reviews and country metadata
+- **Calculated fields** — custom aggregations
+- **Parameters & filters** — dashboard interactivity
+- **Dashboard actions** — cross-filtering between views
 
 ---
 
 ## Files Structure
 
-- `Airways_Reviev.twbx` - Tableau packaged workbook containing:
-  - Data connections (ba_reviews.csv, Countries.csv)
-  - Dashboard layout and visualizations
-  - Calculated fields and parameters
-  - Interactive filters and actions
-  - Map configuration (Mapbox)
-- `ba_reviews.csv` - passenger review data (1,324 reviews, 19 attributes)
-- `Countries.csv` - geographic reference data (251 countries with continent/region mapping)
-- `AirwaysDash.png` - dashboard screenshot for documentation
+- `Airways_Reviev.twbx` — Tableau packaged workbook containing:
+  - data connections
+  - dashboard layout and visualizations
+  - calculated fields and parameters
+  - interactive filters and actions
+  - map configuration
+- `ba_reviews.csv` — passenger review data (1,324 reviews, 19 attributes)
+- `Countries.csv` — geographic reference data (251 countries)
+- `AirwaysDash.png` — dashboard screenshot for documentation
