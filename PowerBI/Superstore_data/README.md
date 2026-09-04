@@ -3,7 +3,7 @@
 ## Overview
 
 Interactive Power BI dashboard analyzing sales performance, profitability, and customer behavior for a U.S.-based retail superstore.  
-The project provides comprehensive insights across geographic regions, product categories, and customer segments to drive data-informed business decisions.
+The project compares performance across geographic regions, product categories, customer segments, and time periods.
 
 Dataset source: [Kaggle - Superstore Dataset](https://www.kaggle.com/code/tarekmasryo/data-analysis-for-superstore-dataset)
 
@@ -38,7 +38,7 @@ Dataset source: [Kaggle - Superstore Dataset](https://www.kaggle.com/code/tarekm
 ### Geographic Analysis
 - **Interactive map visualization** with proportional bubbles
 - Darker and larger bubbles indicate higher order volume
-- Quick identification of high-demand states and regions
+- Identification of states and regions with the highest order volume
 - Regional performance comparison
 
 ### Core KPIs
@@ -52,28 +52,28 @@ Dataset source: [Kaggle - Superstore Dataset](https://www.kaggle.com/code/tarekm
 - **Profit by Category** - category-level profitability comparison
 - **Category Sales Share** - revenue distribution across product categories
 
-### Customer & Trend Insights
-- **Top Customers by Profit** - identification of highest-value customer accounts
+### Customer & Trend Analysis
+- **Top Customers by Profit** - identification of customers generating the highest total profit
 - **Yearly Sales Trend** - time-series analysis of revenue patterns
-- **Segment performance** - Consumer vs. Corporate vs. Home Office comparison
+- **Segment Performance** - Consumer vs Corporate vs Home Office comparison
 
 ### Interactive Filtering
 - **Year filter** - analyze specific annual periods
-- **Month filter** - drill down to monthly granularity
-- **Cross-filtering** - click any chart to dynamically filter all visuals
-- **Dynamic KPI updates** - real-time metric recalculation based on selections
+- **Month filter** - filter data to monthly granularity
+- **Cross-filtering** - click a visual to dynamically filter related report visuals
+- **Dynamic KPI updates** - metrics recalculate based on the active filter context
 
 ---
 
 ## Technical Implementation
 
-### Data Model
-- **Single fact table** structure with 9,994 rows
-- **21 dimensional attributes** including:
-  - Temporal dimensions (Order Date, Ship Date)
-  - Geographic dimensions (State, City, Region)
-  - Product dimensions (Category, Sub-Category, Product Name)
-  - Customer dimensions (Segment, Customer Name)
+### Data Structure
+- **Single-table model** with 9,994 rows
+- **21 attributes** including:
+  - Temporal fields (Order Date, Ship Date)
+  - Geographic fields (State, City, Region)
+  - Product fields (Category, Sub-Category, Product Name)
+  - Customer fields (Segment, Customer Name)
   - Measure columns (Sales, Profit, Quantity, Discount)
 
 ### Power BI Features Used
@@ -81,62 +81,44 @@ Dataset source: [Kaggle - Superstore Dataset](https://www.kaggle.com/code/tarekm
 - **Card visuals** - KPI display for key metrics
 - **Bar charts** - profitability analysis by category/sub-category
 - **Line charts** - temporal trend analysis
-- **Slicers** - Year and Month filtering capabilities
-- **Cross-filtering** - interactive drill-down functionality
+- **Slicers** - Year and Month filtering
+- **Cross-filtering** - interactions between report visuals
 - **DAX measures** - calculated metrics and aggregations
 
 ### Dashboard Design
-- **Single-page layout** - all key insights on one view
-- **Color-coded visualizations** - intuitive data interpretation
-- **Responsive design** - adapts to different screen sizes
-- **Performance-optimized** - fast rendering with ~10K rows
+- **Single-page layout** - key KPIs and analyses available in one report view
+- **Consistent visual structure** - geographic, product, customer, and temporal analyses organized in separate areas
 
 ---
 
 ## Key Insights
 
 ### Geographic Performance
-- **State-level variation**: Significant differences in order volume across 49 states
-- **Regional patterns**: East, West, Central, and South regions show distinct performance characteristics
-- **High-demand areas**: Map visualization reveals concentration of orders in specific states
+- **Order distribution**: Order volume varies across U.S. states and can be compared interactively using the map
+- **Regional comparison**: East, West, Central, and South regions can be compared within the same report view
 
 ### Product Category Analysis
-- **Office Supplies dominance**: 60% of orders (6,026 transactions)
-- **Category profitability**: Varies significantly by sub-category
-- **Product mix**: 17 sub-categories provide granular insight into product performance
-- **Profit leaders vs. laggards**: Bar charts highlight most/least profitable product lines
+- **Office Supplies dominance**: Office Supplies account for 60% of transactions (6,026 orders)
+- **Category profitability**: Profitability varies across categories and sub-categories
+- **Product coverage**: 17 sub-categories provide a more granular view of product performance
 
-### Customer Behavior
-- **Segment distribution**: Consumer segment represents majority (52%) of business
-- **High-value customers**: Top customers drive disproportionate share of profit
-- **Corporate opportunities**: 30% corporate segment represents B2B growth potential
+### Customer Analysis
+- **Segment distribution**: Consumer accounts for 52% of transactions in the dataset
+- **Customer profitability**: The dashboard identifies customers generating the highest total profit
+- **Corporate segment**: Corporate customers account for 30% of transactions, enabling comparison with Consumer and Home Office segments
 
-### Temporal Trends
-- **4-year historical data**: 2014-2017 trend analysis available
-- **Seasonal patterns**: Yearly sales trend reveals cyclical behavior
-- **Growth trajectories**: Year-over-year performance tracking
+### Temporal Analysis
+- **Historical coverage**: Four years of data (2014-2017) are available for year-over-year comparison
+- **Sales trends**: The dashboard supports comparison of sales performance across years and months
 
 ---
 
 ## Business Value
 
-### Strategic Decision Support
-- **Regional performance insights** - identify underperforming and high-potential markets
-- **Product portfolio evaluation** - optimize inventory and focus based on profitability
-- **Customer segmentation** - prioritize high-value customer relationships
-- **Trend monitoring** - track sales and profitability patterns over time
-
-### Operational Applications
-- **Resource allocation** - deploy sales teams to high-opportunity regions
-- **Inventory management** - stock products based on category performance
-- **Pricing strategy** - analyze discount impact on profitability
-- **Customer relationship management** - focus retention efforts on top customers
-
-### Performance Monitoring
-- **Real-time KPI tracking** - monitor key business metrics at a glance
-- **Comparative analysis** - benchmark performance across segments, regions, products
-- **Anomaly detection** - identify unusual patterns requiring attention
-- **Goal tracking** - measure progress against business objectives
+- **Performance monitoring** - compare sales and profitability across regions, products, and customer segments
+- **Product analysis** - identify higher- and lower-profit categories and sub-categories
+- **Customer analysis** - identify customers contributing the highest total profit
+- **Trend analysis** - monitor changes in sales performance across years and months
 
 ---
 
