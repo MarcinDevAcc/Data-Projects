@@ -11,7 +11,7 @@ This repository contains a sanitized portfolio version of a workflow originally 
 
 ## Workflow Overview
 
-![AI Product Data Processing Pipeline](workflow_overview.png)
+![AI Product Data Processing Pipeline](https://raw.githubusercontent.com/MarcinDevAcc/Data-Projects/main/N8N/AI%20Product%20Data%20Processing%20Pipeline/assets/workflow_overview.png)
 
 ### Processing Flow
 
