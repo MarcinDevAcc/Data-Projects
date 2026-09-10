@@ -78,6 +78,13 @@ Interactive Tableau dashboard analyzing passenger satisfaction across service ca
 
 Unless otherwise noted, original code and accompanying documentation authored by Marcin Wójtowicz (MarDev) are licensed under the [MIT License](LICENSE).
 
-Third-party datasets, images, and other materials are excluded from this license and remain subject to their respective licenses and terms of use. Refer to individual project documentation for source and licensing information.
+Third-party datasets, images, and other materials are excluded from this license and remain subject to their respective licenses and terms of use.
+
+### Cover Images
+
+- [E-Commerce Warehouse](https://unsplash.com/photos/brown-cardboard-boxes-on-white-metal-rack-BNBA1h-NgdY)
+- [CRM-ERP Reconciliation Pipeline](https://unsplash.com/photos/blue-and-white-lights-in-the-sky-_uNZnkqeemY)
+- [CenoMetr](https://unsplash.com/photos/low-angle-view-of-building-wR11KBaB86U)
+
 
 
