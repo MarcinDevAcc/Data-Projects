@@ -72,6 +72,12 @@ Automated product data processing and AI enrichment workflow built in n8n, combi
 #### British Airways Review Dashboard
 Interactive Tableau dashboard analyzing passenger satisfaction across service categories, aircraft types, traveler segments, geographic regions, and time periods.
 
+## License
+
+Unless otherwise noted, original code and accompanying documentation authored by Marcin Wójtowicz (MarDev) are licensed under the [MIT License](LICENSE).
+
+Third-party datasets, images, and other materials are excluded from this license and remain subject to their respective licenses and terms of use. Refer to individual project documentation for source and licensing information.
+
 [![Tableau_1](Tableau/Airways_review_dashboard/Airways_Dashboard_Image.png)](Tableau/Airways_review_dashboard)
 
 
