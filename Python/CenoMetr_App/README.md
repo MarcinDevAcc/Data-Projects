@@ -190,3 +190,6 @@ CenoMetr_App/
 - Build a fully automated ETL / retraining pipeline
 - Add an API or lightweight web interface for model inference
 - Integrate transaction-price data to complement listing-based training data
+
+## Image Credit
+Cover photo from [Unsplash](https://unsplash.com/photos/low-angle-view-of-building-wR11KBaB86U).

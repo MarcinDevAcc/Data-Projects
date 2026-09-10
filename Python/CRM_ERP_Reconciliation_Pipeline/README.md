@@ -235,3 +235,6 @@ python main.py
 - **NBP API integration** for live exchange rates
 - **Slack / email notifications** on pipeline failure or threshold breaches
 - **Docker Compose** setup for MySQL + mock API + pipeline
+
+## Image Credit
+Cover photo from [Unsplash](https://unsplash.com/photos/blue-and-white-lights-in-the-sky-_uNZnkqeemY).

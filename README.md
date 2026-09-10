@@ -34,7 +34,7 @@ SQL data-cleaning project using staging tables, window functions, standardizatio
 #### E-Commerce Warehouse KPI Analysis
 Warehouse analytics project using SQL to measure Return Rate, Lead Time, Order Cycle Time, Fill Rate, and Cost per Shipment across the logistics process.
 
-[![SQL_2](SQL/E-Commerce_Warehouse_KPI_Analysis/E-Commerce_Warehouse_Image.png)](SQL/E-Commerce_Warehouse_KPI_Analysis)
+[![SQL_2](SQL/E-Commerce_Warehouse_KPI_Analysis/E-Commerce_Warehouse_Image.jpg)](SQL/E-Commerce_Warehouse_KPI_Analysis)
 
 # Excel
 

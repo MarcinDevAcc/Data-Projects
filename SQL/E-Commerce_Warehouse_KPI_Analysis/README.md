@@ -278,3 +278,6 @@ SHOW VARIABLES LIKE 'secure_file_priv';
 - **ABC-XYZ Analysis** — combine revenue classification with demand variability
 - **Pick Accuracy Analysis** — analyze picker performance and error patterns
 - **Demand Forecasting** — extend the project with historical demand modeling
+
+## Image Credit
+Cover photo from [Unsplash](https://unsplash.com/photos/brown-cardboard-boxes-on-white-metal-rack-BNBA1h-NgdY).
